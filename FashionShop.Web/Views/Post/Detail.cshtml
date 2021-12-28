@@ -1,0 +1,130 @@
+﻿@model FashionShop.Web.Models.PostViewModel
+@{
+    ViewBag.Title = "Chi tiết tin tức";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section headerCSS{
+<link href="~/Assets/client/css/datail-news.css" rel="stylesheet" />
+}
+
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v6.0"></script>
+ <!-- breadcrumbs -->
+<div id="breadcrumbs">
+    <div class="container">
+        <div class="row">
+            <ul class="breadcrumbs">
+                <li class="bread-item">
+                    <a href="/" class="breadcrumb-link">
+                        <i class="fa fa-home" aria-hidden="true"></i>Trang chủ
+                    </a>
+                </li>
+                <li class="bread-item">
+                    <a href="/tin-tuc" class="breadcrumb-link breadcrumb-link-active">Tin tức</a>
+                </li>
+                <li class="bread-item">
+                    <a href="" class="breadcrumb-link breadcrumb-link-active">Chi tiết</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- body -->
+<div class="wp=content">
+    <div class="container">
+        <div class="row">
+            <!-- detail-product -->
+            <div id="detail-product" class="col-md-9">
+                <div class="content">
+                    <div class="title-content">
+                        <h3>@Model.Name</h3>
+                    </div>
+                    <div class="detail-content">
+                        <p>@Model.Description</p>
+                        <div class="img-content">
+                            <img src="@Model.Image" alt="" style="max-width: 100%;">
+                            <h6>hình ảnh minh họa</h6>
+                        </div>
+                        @Html.Raw(@Model.Content)
+                    </div>
+                </div>
+                <div class="like-fb">
+                    <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Ffcbarcelona%2F&width=786&layout=standard&action=like&size=small&share=true&height=35&appId" width="786" height="35" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                </div>
+                <div class="comments-fb">
+                    <div class="fb-comments" data-href="https://www.w3schools.com/" data-numposts="1" data-width="786"></div>
+                </div>
+               
+            </div>
+            <!-- sidebar -->
+            <div id="sidebar" class="col-md-3">
+                <div id="categories">
+                    <div class="category-head">
+                        <h4>danh mục</h4>
+                    </div>
+                    <div class="category-detail">
+                        <ul class="list-category">
+                            <li><a href="">sản phẩm</a></li>
+                            <li><a href="">cảm nhận sản phẩm</a></li>
+                            <li><a href="">xu hướng</a></li>
+                            <li><a style="border-bottom: none;" href="">thanh toán</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="banner" class="img-banner">
+                    <a href=""><img src="~/Assets/client/images/category-product/banner.png" alt=""></a>
+                </div>
+
+                <div id="selling-products">
+                    <div class="category-head">
+                        <h4>sản phẩm bán chạy</h4>
+                    </div>
+                    <div class="category-selling">
+                        <ul class="list-category-selling">
+                            @{
+                                var HotProducts = (IEnumerable<FashionShop.Web.Models.ProductViewModel>)ViewBag.HotProducts;
+                                foreach (var product in HotProducts)
+                                {
+                                    <li class="selling">
+                                        <div>
+                                            <div class="img-selling fl_left">
+                                                <a href="">
+                                                    <img src="@product.Image" alt="@product.Name">
+                                                </a>
+                                            </div>
+                                            <div class="fl-left information-selling">
+                                                <ul>
+                                                    <li>
+                                                        <a class="selling-title" href="">
+                                                            @product.Name
+                                                        </a>
+                                                    </li>
+                                                    <li class="price">
+
+                                                        @if (@product.PromotionPrice == null)
+                                                        {
+                                                            <p><a class="price-after" href="">@string.Format("{0:#,##0}", product.Price)đ</a></p>
+                                                        }
+                                                        else
+                                                        {
+                                                            <p><a class="price-after" href="">@string.Format("{0:#,##0}", product.PromotionPrice)đ</a></p>
+                                                            <p><a class="price-before" href="">@string.Format("{0:#,##0}", product.Price)đ</a></p>
+                                                        }
+                                                    </li>
+                                                    <li><a class="selling-detail" href="">Chi tiết</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                }
+                            }
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+   

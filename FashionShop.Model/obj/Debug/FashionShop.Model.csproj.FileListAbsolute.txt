@@ -1,0 +1,47 @@
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Model\bin\Debug\FashionShop.Model.dll.config
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Model\bin\Debug\FashionShop.Model.dll
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Model\bin\Debug\FashionShop.Model.pdb
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Model\bin\Debug\EntityFramework.dll
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Model\bin\Debug\EntityFramework.xml
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Model\obj\Debug\FashionShop.Model.dll
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Model\obj\Debug\FashionShop.Model.pdb
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Model\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Model\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Model\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Model\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Model\obj\Debug\FashionShop.Model.csprojAssemblyReference.cache
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Model\obj\Debug\FashionShop.Model.csproj.CoreCompileInputs.cache
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Model\obj\Debug\FashionShop.Model.csproj.CopyComplete
+E:\MVC Example\FashionShop2\FashionShop.Model\bin\Debug\FashionShop.Model.dll.config
+E:\MVC Example\FashionShop2\FashionShop.Model\bin\Debug\FashionShop.Model.dll
+E:\MVC Example\FashionShop2\FashionShop.Model\bin\Debug\FashionShop.Model.pdb
+E:\MVC Example\FashionShop2\FashionShop.Model\bin\Debug\EntityFramework.dll
+E:\MVC Example\FashionShop2\FashionShop.Model\bin\Debug\EntityFramework.SqlServer.dll
+E:\MVC Example\FashionShop2\FashionShop.Model\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+E:\MVC Example\FashionShop2\FashionShop.Model\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\MVC Example\FashionShop2\FashionShop.Model\bin\Debug\EntityFramework.xml
+E:\MVC Example\FashionShop2\FashionShop.Model\bin\Debug\EntityFramework.SqlServer.xml
+E:\MVC Example\FashionShop2\FashionShop.Model\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+E:\MVC Example\FashionShop2\FashionShop.Model\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\MVC Example\FashionShop2\FashionShop.Model\obj\Debug\FashionShop.Model.csproj.AssemblyReference.cache
+E:\MVC Example\FashionShop2\FashionShop.Model\obj\Debug\FashionShop.Model.csproj.CoreCompileInputs.cache
+E:\MVC Example\FashionShop2\FashionShop.Model\obj\Debug\FashionShop.Model.csproj.CopyComplete
+E:\MVC Example\FashionShop2\FashionShop.Model\obj\Debug\FashionShop.Model.dll
+E:\MVC Example\FashionShop2\FashionShop.Model\obj\Debug\FashionShop.Model.pdb
+D:\VDDOAN\FashionShop.Model\bin\Debug\FashionShop.Model.dll.config
+D:\VDDOAN\FashionShop.Model\bin\Debug\FashionShop.Model.dll
+D:\VDDOAN\FashionShop.Model\bin\Debug\FashionShop.Model.pdb
+D:\VDDOAN\FashionShop.Model\bin\Debug\EntityFramework.dll
+D:\VDDOAN\FashionShop.Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\VDDOAN\FashionShop.Model\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\VDDOAN\FashionShop.Model\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\VDDOAN\FashionShop.Model\bin\Debug\EntityFramework.xml
+D:\VDDOAN\FashionShop.Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\VDDOAN\FashionShop.Model\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\VDDOAN\FashionShop.Model\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\VDDOAN\FashionShop.Model\obj\Debug\FashionShop.Model.csproj.CoreCompileInputs.cache
+D:\VDDOAN\FashionShop.Model\obj\Debug\FashionShop.Model.csproj.CopyComplete
+D:\VDDOAN\FashionShop.Model\obj\Debug\FashionShop.Model.dll
+D:\VDDOAN\FashionShop.Model\obj\Debug\FashionShop.Model.pdb

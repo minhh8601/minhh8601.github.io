@@ -1,0 +1,89 @@
+﻿<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1>Danh mục tin tức</h1>
+                </div>
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+                        <li class="breadcrumb-item active">Danh mục tin tức</li>
+                    </ol>
+                </div>
+            </div>
+        </div><!-- /.container-fluid -->
+    </section>
+
+    <div class="card">
+        <div class="card-body row">
+            <div class="col-md-6">
+                <button class="btn btn-success" ui-sref="add_post_category">Thêm mới</button>
+                <button class="btn btn-danger" ng-click="deleteMultiple()" id="btnDelete" disabled>Xóa</button>
+            </div>  
+            <div class="col-md-6" style="padding: 0;margin-bottom: 10px;">
+                <div class="input-group">
+                    <input type="text" class="form-control" ng-model="keyword" placeholder="Từ khóa">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button" ng-click="search()">Tìm kiếm</button>
+                    </span>
+                </div><!-- /input-group -->
+            </div>
+             
+            <table id="example1" class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <td><input name="all" type="checkbox" ng-click="selectAll()" /></td>
+                        <th>STT</th>
+                        <th>Tên danh mục</th>
+                        <th>Tiêu đề SEO</th>
+                        <th>Danh mục cha</th>
+                        <th>Thứ tự</th>
+                        <th>Ngày tạo</th>
+                        <th>Trang trủ</th>
+                        <th>Trạng thái</th>
+                        <th>#</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="item in postCategories">
+                        <td><input type="checkbox" ng-model="item.checked" name="all" /></td>
+                        <td>{{$index+1}}</td>
+                        <td>{{item.Name}}</td>
+                        <td>{{item.Alias}}</td>
+                        <td>{{item.ParentID}}</td>
+                        <td>{{item.DisplayOrder}}</td>
+                        <td>{{item.CreatedDate |date:'dd-MM-yyyy'}}</td>
+                        <td>{{item.HomeFlag | homeFlagFilter}}</td>
+                        <td>
+                            <span ng-class="{'badge bg-red':item.Status==false,'badge bg-green':item.Status==true}">
+                                {{item.Status | statusFilter}}
+                            </span>
+                        </td>
+                        <td>
+                            <button class="btn btn-sm btn-primary" ui-sref="edit_post_category({id:item.ID})"><i class="fa fa-pencil-alt" aria-hidden="true"></i></button>
+                            <button class="btn  btn-sm btn-danger" ng-click="deletePostCategory(item.ID)"><i class="fa fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr ng-if="!postCategories || postCategories.length == 0">
+                        <td colspan="10" style="text-align: center">
+                            Đang Load danh mục ...
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4"><span class="pull-right">Trang: {{page+1}} - Tổng số bản ghi: {{totalCount}}</span></td>
+                    </tr>
+                </tfoot>
+            </table>
+           
+        </div>
+        <!-- /.card-body -->
+        <div class="card-footer">
+            <pager-directive page="{{page}}" custom-path="{{customPath}}" pages-count="{{pagesCount}}" total-count="{{totalCount}}" search-func="getPostCagories(page)"></pager-directive>
+        </div><!-- /.box-footer-->
+    </div>
+</div>

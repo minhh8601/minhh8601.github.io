@@ -1,0 +1,102 @@
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Data\bin\Debug\FashionShop.Data.dll.config
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Data\bin\Debug\FashionShop.Data.dll
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Data\bin\Debug\FashionShop.Data.pdb
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Data\bin\Debug\EntityFramework.dll
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Data\bin\Debug\EntityFramework.SqlServer.dll
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Data\bin\Debug\FashionShop.Common.dll
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Data\bin\Debug\FashionShop.Model.dll
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Data\bin\Debug\FashionShop.Common.pdb
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Data\bin\Debug\FashionShop.Model.pdb
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Data\bin\Debug\EntityFramework.xml
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Data\bin\Debug\EntityFramework.SqlServer.xml
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Data\obj\Debug\FashionShop.Data.dll
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Data\obj\Debug\FashionShop.Data.pdb
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Data\obj\Debug\FashionShop.Data.Migrations.InitialDB.resources
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Data\obj\Debug\FashionShop.Data.csproj.GenerateResource.Cache
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Data\obj\Debug\FashionShop.Data.Migrations.addtableError.resources
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Data\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Data\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Data\obj\Debug\FashionShop.Data.Migrations.intergrateAspnetIdentity.resources
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Data\obj\Debug\FashionShop.Data.Migrations.updateDB.resources
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Data\obj\Debug\FashionShop.Data.Migrations.updateDB1.resources
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Data\obj\Debug\FashionShop.Data.Migrations.addTypedb.resources
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Data\obj\Debug\FashionShop.Data.Migrations.updateType.resources
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Data\obj\Debug\FashionShop.Data.Migrations.updateDB2.resources
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Data\obj\Debug\FashionShop.Data.Migrations.updateDB3.resources
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Data\obj\Debug\FashionShop.Data.Migrations.ContactDetail.resources
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Data\obj\Debug\FashionShop.Data.Migrations.UpdatePost.resources
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Data\obj\Debug\FashionShop.Data.Migrations.updateOrder.resources
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Data\bin\Debug\FashionShop.Model.dll.config
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Data\obj\Debug\FashionShop.Data.csprojAssemblyReference.cache
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Data\obj\Debug\FashionShop.Data.csproj.CoreCompileInputs.cache
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Data\obj\Debug\FashionShop.Data.csproj.CopyComplete
+E:\MVC Example\FashionShop2\FashionShop.Data\bin\Debug\FashionShop.Data.dll.config
+E:\MVC Example\FashionShop2\FashionShop.Data\bin\Debug\FashionShop.Data.dll
+E:\MVC Example\FashionShop2\FashionShop.Data\bin\Debug\FashionShop.Data.pdb
+E:\MVC Example\FashionShop2\FashionShop.Data\bin\Debug\EntityFramework.dll
+E:\MVC Example\FashionShop2\FashionShop.Data\bin\Debug\EntityFramework.SqlServer.dll
+E:\MVC Example\FashionShop2\FashionShop.Data\bin\Debug\FashionShop.Common.dll
+E:\MVC Example\FashionShop2\FashionShop.Data\bin\Debug\FashionShop.Model.dll
+E:\MVC Example\FashionShop2\FashionShop.Data\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+E:\MVC Example\FashionShop2\FashionShop.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\MVC Example\FashionShop2\FashionShop.Data\bin\Debug\FashionShop.Common.pdb
+E:\MVC Example\FashionShop2\FashionShop.Data\bin\Debug\FashionShop.Model.pdb
+E:\MVC Example\FashionShop2\FashionShop.Data\bin\Debug\FashionShop.Model.dll.config
+E:\MVC Example\FashionShop2\FashionShop.Data\bin\Debug\EntityFramework.xml
+E:\MVC Example\FashionShop2\FashionShop.Data\bin\Debug\EntityFramework.SqlServer.xml
+E:\MVC Example\FashionShop2\FashionShop.Data\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+E:\MVC Example\FashionShop2\FashionShop.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\MVC Example\FashionShop2\FashionShop.Data\obj\Debug\FashionShop.Data.csproj.AssemblyReference.cache
+E:\MVC Example\FashionShop2\FashionShop.Data\obj\Debug\FashionShop.Data.Migrations.InitialDB.resources
+E:\MVC Example\FashionShop2\FashionShop.Data\obj\Debug\FashionShop.Data.Migrations.addtableError.resources
+E:\MVC Example\FashionShop2\FashionShop.Data\obj\Debug\FashionShop.Data.Migrations.intergrateAspnetIdentity.resources
+E:\MVC Example\FashionShop2\FashionShop.Data\obj\Debug\FashionShop.Data.Migrations.updateDB.resources
+E:\MVC Example\FashionShop2\FashionShop.Data\obj\Debug\FashionShop.Data.Migrations.updateDB1.resources
+E:\MVC Example\FashionShop2\FashionShop.Data\obj\Debug\FashionShop.Data.Migrations.addTypedb.resources
+E:\MVC Example\FashionShop2\FashionShop.Data\obj\Debug\FashionShop.Data.Migrations.updateType.resources
+E:\MVC Example\FashionShop2\FashionShop.Data\obj\Debug\FashionShop.Data.Migrations.updateDB2.resources
+E:\MVC Example\FashionShop2\FashionShop.Data\obj\Debug\FashionShop.Data.Migrations.updateDB3.resources
+E:\MVC Example\FashionShop2\FashionShop.Data\obj\Debug\FashionShop.Data.Migrations.ContactDetail.resources
+E:\MVC Example\FashionShop2\FashionShop.Data\obj\Debug\FashionShop.Data.Migrations.UpdatePost.resources
+E:\MVC Example\FashionShop2\FashionShop.Data\obj\Debug\FashionShop.Data.Migrations.updateOrder.resources
+E:\MVC Example\FashionShop2\FashionShop.Data\obj\Debug\FashionShop.Data.csproj.GenerateResource.cache
+E:\MVC Example\FashionShop2\FashionShop.Data\obj\Debug\FashionShop.Data.csproj.CoreCompileInputs.cache
+E:\MVC Example\FashionShop2\FashionShop.Data\obj\Debug\FashionShop.Data.csproj.CopyComplete
+E:\MVC Example\FashionShop2\FashionShop.Data\obj\Debug\FashionShop.Data.dll
+E:\MVC Example\FashionShop2\FashionShop.Data\obj\Debug\FashionShop.Data.pdb
+D:\VDDOAN\FashionShop.Data\bin\Debug\FashionShop.Data.dll.config
+D:\VDDOAN\FashionShop.Data\bin\Debug\FashionShop.Data.dll
+D:\VDDOAN\FashionShop.Data\bin\Debug\FashionShop.Data.pdb
+D:\VDDOAN\FashionShop.Data\bin\Debug\EntityFramework.dll
+D:\VDDOAN\FashionShop.Data\bin\Debug\EntityFramework.SqlServer.dll
+D:\VDDOAN\FashionShop.Data\bin\Debug\FashionShop.Common.dll
+D:\VDDOAN\FashionShop.Data\bin\Debug\FashionShop.Model.dll
+D:\VDDOAN\FashionShop.Data\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\VDDOAN\FashionShop.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\VDDOAN\FashionShop.Data\bin\Debug\FashionShop.Common.pdb
+D:\VDDOAN\FashionShop.Data\bin\Debug\FashionShop.Model.pdb
+D:\VDDOAN\FashionShop.Data\bin\Debug\FashionShop.Model.dll.config
+D:\VDDOAN\FashionShop.Data\bin\Debug\EntityFramework.xml
+D:\VDDOAN\FashionShop.Data\bin\Debug\EntityFramework.SqlServer.xml
+D:\VDDOAN\FashionShop.Data\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\VDDOAN\FashionShop.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\VDDOAN\FashionShop.Data\obj\Debug\FashionShop.Data.csproj.AssemblyReference.cache
+D:\VDDOAN\FashionShop.Data\obj\Debug\FashionShop.Data.Migrations.InitialDB.resources
+D:\VDDOAN\FashionShop.Data\obj\Debug\FashionShop.Data.Migrations.addtableError.resources
+D:\VDDOAN\FashionShop.Data\obj\Debug\FashionShop.Data.Migrations.intergrateAspnetIdentity.resources
+D:\VDDOAN\FashionShop.Data\obj\Debug\FashionShop.Data.Migrations.updateDB.resources
+D:\VDDOAN\FashionShop.Data\obj\Debug\FashionShop.Data.Migrations.updateDB1.resources
+D:\VDDOAN\FashionShop.Data\obj\Debug\FashionShop.Data.Migrations.addTypedb.resources
+D:\VDDOAN\FashionShop.Data\obj\Debug\FashionShop.Data.Migrations.updateType.resources
+D:\VDDOAN\FashionShop.Data\obj\Debug\FashionShop.Data.Migrations.updateDB2.resources
+D:\VDDOAN\FashionShop.Data\obj\Debug\FashionShop.Data.Migrations.updateDB3.resources
+D:\VDDOAN\FashionShop.Data\obj\Debug\FashionShop.Data.Migrations.ContactDetail.resources
+D:\VDDOAN\FashionShop.Data\obj\Debug\FashionShop.Data.Migrations.UpdatePost.resources
+D:\VDDOAN\FashionShop.Data\obj\Debug\FashionShop.Data.Migrations.updateOrder.resources
+D:\VDDOAN\FashionShop.Data\obj\Debug\FashionShop.Data.csproj.GenerateResource.cache
+D:\VDDOAN\FashionShop.Data\obj\Debug\FashionShop.Data.csproj.CoreCompileInputs.cache
+D:\VDDOAN\FashionShop.Data\obj\Debug\FashionShop.Data.csproj.CopyComplete
+D:\VDDOAN\FashionShop.Data\obj\Debug\FashionShop.Data.dll
+D:\VDDOAN\FashionShop.Data\obj\Debug\FashionShop.Data.pdb

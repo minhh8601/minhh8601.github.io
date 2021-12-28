@@ -1,0 +1,368 @@
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\ApplicationInsights.config
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\roslyn\csc.exe
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\roslyn\System.Collections.Immutable.dll
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\roslyn\System.Reflection.Metadata.dll
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\roslyn\vbc.exe
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\roslyn\VBCSCompiler.exe
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\roslyn\VBCSCompiler.exe.config
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\FashionShop.Web.dll.config
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\FashionShop.Web.dll
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\FashionShop.Web.pdb
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\Antlr3.Runtime.dll
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\EntityFramework.dll
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\EntityFramework.SqlServer.dll
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\FashionShop.Common.dll
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\FashionShop.Data.dll
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\FashionShop.Model.dll
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\FashionShop.Service.dll
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\Microsoft.AI.Agent.Intercept.dll
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\Microsoft.AI.DependencyCollector.dll
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\Microsoft.AI.Web.dll
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\Microsoft.AI.WindowsServer.dll
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\Microsoft.ApplicationInsights.dll
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\Microsoft.Web.Infrastructure.dll
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\Newtonsoft.Json.dll
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\System.Net.Http.Formatting.dll
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\System.Web.Helpers.dll
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\System.Web.Http.dll
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\System.Web.Http.WebHost.dll
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\System.Web.Mvc.dll
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\System.Web.Optimization.dll
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\System.Web.Razor.dll
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\System.Web.WebPages.Deployment.dll
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\System.Web.WebPages.dll
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\System.Web.WebPages.Razor.dll
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\WebGrease.dll
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\FashionShop.Common.pdb
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\FashionShop.Data.pdb
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\FashionShop.Model.pdb
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\FashionShop.Service.pdb
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\EntityFramework.xml
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\EntityFramework.SqlServer.xml
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\Microsoft.AI.DependencyCollector.xml
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\Microsoft.AI.Web.xml
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\Microsoft.AI.WindowsServer.xml
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\Microsoft.ApplicationInsights.xml
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\System.Web.Helpers.xml
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\System.Web.Mvc.xml
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\System.Web.Optimization.xml
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\System.Web.Razor.xml
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\System.Web.WebPages.xml
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\System.Web.WebPages.Deployment.xml
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\System.Web.WebPages.Razor.xml
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\Antlr3.Runtime.pdb
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\Newtonsoft.Json.xml
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\System.Net.Http.Formatting.xml
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\System.Web.Http.xml
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\System.Web.Http.WebHost.xml
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\obj\Debug\FashionShop.Web.dll
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\obj\Debug\FashionShop.Web.pdb
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\Autofac.dll
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\Autofac.Integration.Mvc.dll
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\Autofac.Integration.WebApi.dll
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\AutoMapper.dll
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\Microsoft.Owin.dll
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\Owin.dll
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\System.ValueTuple.dll
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\Autofac.xml
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\Autofac.Integration.Mvc.xml
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\Autofac.Integration.WebApi.pdb
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\Autofac.Integration.WebApi.xml
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\AutoMapper.pdb
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\AutoMapper.xml
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\Microsoft.Owin.xml
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\System.ValueTuple.xml
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\Microsoft.AspNet.Identity.Core.dll
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\Microsoft.Owin.Security.Cookies.dll
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\Microsoft.Owin.Security.dll
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\Microsoft.Owin.Security.OAuth.dll
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\Microsoft.AspNet.Identity.Core.xml
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\Microsoft.Owin.Security.xml
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\Microsoft.Owin.Security.Cookies.xml
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\Microsoft.Owin.Security.OAuth.xml
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\CKFinder.dll
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\CKFinder_FileEditor.dll
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\CKFinder_ImageResize.dll
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\CKFinder_Watermark.dll
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\CKFinder.pdb
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\CKFinder_FileEditor.pdb
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\CKFinder_ImageResize.pdb
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\CKFinder_Watermark.pdb
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\System.Web.Http.Owin.dll
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\System.Web.Http.Owin.xml
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\FashionShop.Data.dll.config
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\bin\FashionShop.Model.dll.config
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\obj\Debug\FashionShop.Web.csprojAssemblyReference.cache
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\obj\Debug\FashionShop.Web.csproj.CoreCompileInputs.cache
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Web\obj\Debug\FashionShop.Web.csproj.CopyComplete
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\ApplicationInsights.config
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\roslyn\csc.exe
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\roslyn\System.Collections.Immutable.dll
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\roslyn\System.Reflection.Metadata.dll
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\roslyn\vbc.exe
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\roslyn\VBCSCompiler.exe
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\roslyn\VBCSCompiler.exe.config
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\FashionShop.Web.dll.config
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\FashionShop.Web.dll
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\FashionShop.Web.pdb
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\Antlr3.Runtime.dll
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\Autofac.dll
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\Autofac.Integration.Mvc.dll
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\Autofac.Integration.WebApi.dll
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\AutoMapper.dll
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\CKFinder.dll
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\CKFinder_FileEditor.dll
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\CKFinder_ImageResize.dll
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\CKFinder_Watermark.dll
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\EntityFramework.dll
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\EntityFramework.SqlServer.dll
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\FashionShop.Common.dll
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\FashionShop.Data.dll
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\FashionShop.Model.dll
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\FashionShop.Service.dll
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\Microsoft.AI.Agent.Intercept.dll
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\Microsoft.AI.DependencyCollector.dll
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\Microsoft.AI.Web.dll
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\Microsoft.AI.WindowsServer.dll
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\Microsoft.ApplicationInsights.dll
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\Microsoft.AspNet.Identity.Core.dll
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\Microsoft.Owin.dll
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\Microsoft.Owin.Security.Cookies.dll
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\Microsoft.Owin.Security.dll
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\Microsoft.Owin.Security.OAuth.dll
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\Microsoft.Web.Infrastructure.dll
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\Newtonsoft.Json.dll
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\Owin.dll
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\System.Net.Http.Formatting.dll
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\System.ValueTuple.dll
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\System.Web.Helpers.dll
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\System.Web.Http.dll
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\System.Web.Http.Owin.dll
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\System.Web.Http.WebHost.dll
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\System.Web.Mvc.dll
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\System.Web.Optimization.dll
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\System.Web.Razor.dll
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\System.Web.WebPages.Deployment.dll
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\System.Web.WebPages.dll
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\System.Web.WebPages.Razor.dll
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\WebGrease.dll
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\FashionShop.Common.pdb
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\FashionShop.Data.pdb
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\FashionShop.Data.dll.config
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\FashionShop.Model.pdb
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\FashionShop.Model.dll.config
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\FashionShop.Service.pdb
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\Autofac.xml
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\Autofac.Integration.Mvc.xml
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\Autofac.Integration.WebApi.pdb
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\Autofac.Integration.WebApi.xml
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\AutoMapper.pdb
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\AutoMapper.xml
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\CKFinder.pdb
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\CKFinder_FileEditor.pdb
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\CKFinder_ImageResize.pdb
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\CKFinder_Watermark.pdb
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\EntityFramework.xml
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\EntityFramework.SqlServer.xml
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\Microsoft.AI.DependencyCollector.xml
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\Microsoft.AI.Web.xml
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\Microsoft.AI.WindowsServer.xml
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\Microsoft.ApplicationInsights.xml
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\Microsoft.AspNet.Identity.Core.xml
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\Microsoft.Owin.xml
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\Microsoft.Owin.Security.xml
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\Microsoft.Owin.Security.Cookies.xml
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\Microsoft.Owin.Security.OAuth.xml
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\System.Net.Http.Formatting.xml
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\System.ValueTuple.xml
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\System.Web.Http.xml
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\System.Web.Http.Owin.xml
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\System.Web.Helpers.xml
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\System.Web.Mvc.xml
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\System.Web.Optimization.xml
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\System.Web.Razor.xml
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\System.Web.WebPages.xml
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\System.Web.WebPages.Deployment.xml
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\System.Web.WebPages.Razor.xml
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\Antlr3.Runtime.pdb
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\Newtonsoft.Json.xml
+E:\MVC Example\FashionShop2\FashionShop.Web\bin\System.Web.Http.WebHost.xml
+E:\MVC Example\FashionShop2\FashionShop.Web\obj\Debug\FashionShop.Web.csproj.AssemblyReference.cache
+E:\MVC Example\FashionShop2\FashionShop.Web\obj\Debug\FashionShop.Web.csproj.CoreCompileInputs.cache
+E:\MVC Example\FashionShop2\FashionShop.Web\obj\Debug\FashionShop.Web.csproj.CopyComplete
+E:\MVC Example\FashionShop2\FashionShop.Web\obj\Debug\FashionShop.Web.dll
+E:\MVC Example\FashionShop2\FashionShop.Web\obj\Debug\FashionShop.Web.pdb
+E:\MVC Example\FashionShop2\FashionShop.Web\obj\Debug\FashionShop.Data.Migrations.InitialDB.resources
+E:\MVC Example\FashionShop2\FashionShop.Web\obj\Debug\FashionShop.Data.Migrations.addtableError.resources
+E:\MVC Example\FashionShop2\FashionShop.Web\obj\Debug\FashionShop.Data.Migrations.intergrateAspnetIdentity.resources
+E:\MVC Example\FashionShop2\FashionShop.Web\obj\Debug\FashionShop.Data.Migrations.updateDB.resources
+E:\MVC Example\FashionShop2\FashionShop.Web\obj\Debug\FashionShop.Data.Migrations.updateDB1.resources
+E:\MVC Example\FashionShop2\FashionShop.Web\obj\Debug\FashionShop.Data.Migrations.addTypedb.resources
+E:\MVC Example\FashionShop2\FashionShop.Web\obj\Debug\FashionShop.Data.Migrations.updateType.resources
+E:\MVC Example\FashionShop2\FashionShop.Web\obj\Debug\FashionShop.Data.Migrations.updateDB2.resources
+E:\MVC Example\FashionShop2\FashionShop.Web\obj\Debug\FashionShop.Data.Migrations.updateDB3.resources
+E:\MVC Example\FashionShop2\FashionShop.Web\obj\Debug\FashionShop.Data.Migrations.ContactDetail.resources
+E:\MVC Example\FashionShop2\FashionShop.Web\obj\Debug\FashionShop.Data.Migrations.UpdatePost.resources
+E:\MVC Example\FashionShop2\FashionShop.Web\obj\Debug\FashionShop.Data.Migrations.updateOrder.resources
+E:\MVC Example\FashionShop2\FashionShop.Web\obj\Debug\FashionShop.Web.csproj.GenerateResource.cache
+D:\VDDOAN\FashionShop.Web\bin\ApplicationInsights.config
+D:\VDDOAN\FashionShop.Web\bin\roslyn\csc.exe
+D:\VDDOAN\FashionShop.Web\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\VDDOAN\FashionShop.Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\VDDOAN\FashionShop.Web\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\VDDOAN\FashionShop.Web\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\VDDOAN\FashionShop.Web\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\VDDOAN\FashionShop.Web\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\VDDOAN\FashionShop.Web\bin\roslyn\System.Collections.Immutable.dll
+D:\VDDOAN\FashionShop.Web\bin\roslyn\System.Reflection.Metadata.dll
+D:\VDDOAN\FashionShop.Web\bin\roslyn\vbc.exe
+D:\VDDOAN\FashionShop.Web\bin\roslyn\VBCSCompiler.exe
+D:\VDDOAN\FashionShop.Web\bin\roslyn\VBCSCompiler.exe.config
+D:\VDDOAN\FashionShop.Web\bin\FashionShop.Web.dll.config
+D:\VDDOAN\FashionShop.Web\bin\FashionShop.Web.dll
+D:\VDDOAN\FashionShop.Web\bin\FashionShop.Web.pdb
+D:\VDDOAN\FashionShop.Web\bin\Antlr3.Runtime.dll
+D:\VDDOAN\FashionShop.Web\bin\Autofac.dll
+D:\VDDOAN\FashionShop.Web\bin\Autofac.Integration.Mvc.dll
+D:\VDDOAN\FashionShop.Web\bin\Autofac.Integration.WebApi.dll
+D:\VDDOAN\FashionShop.Web\bin\AutoMapper.dll
+D:\VDDOAN\FashionShop.Web\bin\CKFinder.dll
+D:\VDDOAN\FashionShop.Web\bin\CKFinder_FileEditor.dll
+D:\VDDOAN\FashionShop.Web\bin\CKFinder_ImageResize.dll
+D:\VDDOAN\FashionShop.Web\bin\CKFinder_Watermark.dll
+D:\VDDOAN\FashionShop.Web\bin\EntityFramework.dll
+D:\VDDOAN\FashionShop.Web\bin\EntityFramework.SqlServer.dll
+D:\VDDOAN\FashionShop.Web\bin\FashionShop.Common.dll
+D:\VDDOAN\FashionShop.Web\bin\FashionShop.Data.dll
+D:\VDDOAN\FashionShop.Web\bin\FashionShop.Model.dll
+D:\VDDOAN\FashionShop.Web\bin\FashionShop.Service.dll
+D:\VDDOAN\FashionShop.Web\bin\Microsoft.AI.Agent.Intercept.dll
+D:\VDDOAN\FashionShop.Web\bin\Microsoft.AI.DependencyCollector.dll
+D:\VDDOAN\FashionShop.Web\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\VDDOAN\FashionShop.Web\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\VDDOAN\FashionShop.Web\bin\Microsoft.AI.Web.dll
+D:\VDDOAN\FashionShop.Web\bin\Microsoft.AI.WindowsServer.dll
+D:\VDDOAN\FashionShop.Web\bin\Microsoft.ApplicationInsights.dll
+D:\VDDOAN\FashionShop.Web\bin\Microsoft.AspNet.Identity.Core.dll
+D:\VDDOAN\FashionShop.Web\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\VDDOAN\FashionShop.Web\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\VDDOAN\FashionShop.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\VDDOAN\FashionShop.Web\bin\Microsoft.Owin.dll
+D:\VDDOAN\FashionShop.Web\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\VDDOAN\FashionShop.Web\bin\Microsoft.Owin.Security.Cookies.dll
+D:\VDDOAN\FashionShop.Web\bin\Microsoft.Owin.Security.dll
+D:\VDDOAN\FashionShop.Web\bin\Microsoft.Owin.Security.OAuth.dll
+D:\VDDOAN\FashionShop.Web\bin\Microsoft.Web.Infrastructure.dll
+D:\VDDOAN\FashionShop.Web\bin\Newtonsoft.Json.dll
+D:\VDDOAN\FashionShop.Web\bin\Owin.dll
+D:\VDDOAN\FashionShop.Web\bin\System.Net.Http.Formatting.dll
+D:\VDDOAN\FashionShop.Web\bin\System.ValueTuple.dll
+D:\VDDOAN\FashionShop.Web\bin\System.Web.Helpers.dll
+D:\VDDOAN\FashionShop.Web\bin\System.Web.Http.dll
+D:\VDDOAN\FashionShop.Web\bin\System.Web.Http.Owin.dll
+D:\VDDOAN\FashionShop.Web\bin\System.Web.Http.WebHost.dll
+D:\VDDOAN\FashionShop.Web\bin\System.Web.Mvc.dll
+D:\VDDOAN\FashionShop.Web\bin\System.Web.Optimization.dll
+D:\VDDOAN\FashionShop.Web\bin\System.Web.Razor.dll
+D:\VDDOAN\FashionShop.Web\bin\System.Web.WebPages.Deployment.dll
+D:\VDDOAN\FashionShop.Web\bin\System.Web.WebPages.dll
+D:\VDDOAN\FashionShop.Web\bin\System.Web.WebPages.Razor.dll
+D:\VDDOAN\FashionShop.Web\bin\WebGrease.dll
+D:\VDDOAN\FashionShop.Web\bin\FashionShop.Common.pdb
+D:\VDDOAN\FashionShop.Web\bin\FashionShop.Data.pdb
+D:\VDDOAN\FashionShop.Web\bin\FashionShop.Data.dll.config
+D:\VDDOAN\FashionShop.Web\bin\FashionShop.Model.pdb
+D:\VDDOAN\FashionShop.Web\bin\FashionShop.Model.dll.config
+D:\VDDOAN\FashionShop.Web\bin\FashionShop.Service.pdb
+D:\VDDOAN\FashionShop.Web\bin\Autofac.xml
+D:\VDDOAN\FashionShop.Web\bin\Autofac.Integration.Mvc.xml
+D:\VDDOAN\FashionShop.Web\bin\Autofac.Integration.WebApi.pdb
+D:\VDDOAN\FashionShop.Web\bin\Autofac.Integration.WebApi.xml
+D:\VDDOAN\FashionShop.Web\bin\AutoMapper.pdb
+D:\VDDOAN\FashionShop.Web\bin\AutoMapper.xml
+D:\VDDOAN\FashionShop.Web\bin\CKFinder.pdb
+D:\VDDOAN\FashionShop.Web\bin\CKFinder_FileEditor.pdb
+D:\VDDOAN\FashionShop.Web\bin\CKFinder_ImageResize.pdb
+D:\VDDOAN\FashionShop.Web\bin\CKFinder_Watermark.pdb
+D:\VDDOAN\FashionShop.Web\bin\EntityFramework.xml
+D:\VDDOAN\FashionShop.Web\bin\EntityFramework.SqlServer.xml
+D:\VDDOAN\FashionShop.Web\bin\Microsoft.AI.DependencyCollector.xml
+D:\VDDOAN\FashionShop.Web\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\VDDOAN\FashionShop.Web\bin\Microsoft.AI.Web.xml
+D:\VDDOAN\FashionShop.Web\bin\Microsoft.AI.WindowsServer.xml
+D:\VDDOAN\FashionShop.Web\bin\Microsoft.ApplicationInsights.xml
+D:\VDDOAN\FashionShop.Web\bin\Microsoft.AspNet.Identity.Core.xml
+D:\VDDOAN\FashionShop.Web\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\VDDOAN\FashionShop.Web\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\VDDOAN\FashionShop.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\VDDOAN\FashionShop.Web\bin\Microsoft.Owin.xml
+D:\VDDOAN\FashionShop.Web\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\VDDOAN\FashionShop.Web\bin\Microsoft.Owin.Security.xml
+D:\VDDOAN\FashionShop.Web\bin\Microsoft.Owin.Security.Cookies.xml
+D:\VDDOAN\FashionShop.Web\bin\Microsoft.Owin.Security.OAuth.xml
+D:\VDDOAN\FashionShop.Web\bin\System.Net.Http.Formatting.xml
+D:\VDDOAN\FashionShop.Web\bin\System.ValueTuple.xml
+D:\VDDOAN\FashionShop.Web\bin\System.Web.Http.xml
+D:\VDDOAN\FashionShop.Web\bin\System.Web.Http.Owin.xml
+D:\VDDOAN\FashionShop.Web\bin\System.Web.Helpers.xml
+D:\VDDOAN\FashionShop.Web\bin\System.Web.Mvc.xml
+D:\VDDOAN\FashionShop.Web\bin\System.Web.Optimization.xml
+D:\VDDOAN\FashionShop.Web\bin\System.Web.Razor.xml
+D:\VDDOAN\FashionShop.Web\bin\System.Web.WebPages.xml
+D:\VDDOAN\FashionShop.Web\bin\System.Web.WebPages.Deployment.xml
+D:\VDDOAN\FashionShop.Web\bin\System.Web.WebPages.Razor.xml
+D:\VDDOAN\FashionShop.Web\bin\Antlr3.Runtime.pdb
+D:\VDDOAN\FashionShop.Web\bin\Newtonsoft.Json.xml
+D:\VDDOAN\FashionShop.Web\bin\System.Web.Http.WebHost.xml
+D:\VDDOAN\FashionShop.Web\obj\Debug\FashionShop.Web.csproj.AssemblyReference.cache
+D:\VDDOAN\FashionShop.Web\obj\Debug\FashionShop.Data.Migrations.InitialDB.resources
+D:\VDDOAN\FashionShop.Web\obj\Debug\FashionShop.Data.Migrations.addtableError.resources
+D:\VDDOAN\FashionShop.Web\obj\Debug\FashionShop.Data.Migrations.intergrateAspnetIdentity.resources
+D:\VDDOAN\FashionShop.Web\obj\Debug\FashionShop.Data.Migrations.updateDB.resources
+D:\VDDOAN\FashionShop.Web\obj\Debug\FashionShop.Data.Migrations.updateDB1.resources
+D:\VDDOAN\FashionShop.Web\obj\Debug\FashionShop.Data.Migrations.addTypedb.resources
+D:\VDDOAN\FashionShop.Web\obj\Debug\FashionShop.Data.Migrations.updateType.resources
+D:\VDDOAN\FashionShop.Web\obj\Debug\FashionShop.Data.Migrations.updateDB2.resources
+D:\VDDOAN\FashionShop.Web\obj\Debug\FashionShop.Data.Migrations.updateDB3.resources
+D:\VDDOAN\FashionShop.Web\obj\Debug\FashionShop.Data.Migrations.ContactDetail.resources
+D:\VDDOAN\FashionShop.Web\obj\Debug\FashionShop.Data.Migrations.UpdatePost.resources
+D:\VDDOAN\FashionShop.Web\obj\Debug\FashionShop.Data.Migrations.updateOrder.resources
+D:\VDDOAN\FashionShop.Web\obj\Debug\FashionShop.Web.csproj.GenerateResource.cache
+D:\VDDOAN\FashionShop.Web\obj\Debug\FashionShop.Web.csproj.CoreCompileInputs.cache
+D:\VDDOAN\FashionShop.Web\obj\Debug\FashionShop.Web.csproj.CopyComplete
+D:\VDDOAN\FashionShop.Web\obj\Debug\FashionShop.Web.dll
+D:\VDDOAN\FashionShop.Web\obj\Debug\FashionShop.Web.pdb

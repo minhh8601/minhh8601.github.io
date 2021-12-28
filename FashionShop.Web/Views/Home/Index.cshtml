@@ -1,0 +1,307 @@
+﻿@model FashionShop.Web.Models.ProductViewModel
+@{
+    ViewBag.Title = "Trang chủ";
+    Layout = "~/Views/Shared/_Layout.cshtml";  
+}
+
+@section headerCSS{
+    <link href="~/Assets/client/css/style.css" rel="stylesheet" />
+}
+@section footerJS{
+    <script src="~/Assets/client/js/scrips.js"></script>
+}
+
+<div id="slider" class="mb">
+    <img src="~/Assets/client/images/silde.png" alt="slide">
+</div>
+<!-- content -->
+<div id="wrapper-content">
+    <div class="container">
+        <div id="list-sercise" class="row">
+            <div class="col-4" id="sercise-1">
+                <ul>
+                    <li><a id="sercise-text-1" href="">free ship nội thành</a></li>
+                    <li>
+                        <a id="sercise-icon-1" href=""><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-4" id="sercise-2">
+                <ul>
+                    <li><a id="sercise-text-2" href="">tặng thẻ thành viên</a></li>
+                    <li><a id="sercise-icon-2" href=""><i class="fa fa-gift" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+            <div class="col-4" id="sercise-3">
+                <ul>
+                    <li><a id="sercise-text-3" href="">Khuyến mãi cuối tuần</a></li>
+                    <li>
+                        <a id="sercise-icon-3" href=""><i class="fa fa-paper-plane-o" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="wp-product" class="container">
+            <div id="hot-product" class="row">
+                <div class="col-12 title-content">
+                    <a href=""><img src="~/Assets/client/images/horizontal-line.png" alt=""> sản phẩm nổi bật <img src="~/Assets/client/images/horizontal-line.png" alt=""></a>
+                </div>
+                <div class="list-product container col-12">
+                    <div class="row">
+                        <div class="owl-carousel owl-theme owl-loaded col-12">
+                            <div class="owl-stage-outer">
+                                <div class="owl-stage">
+                                    @{
+                                        var responseProductHot = ViewBag.responseProductHot;
+                                        foreach (var item in responseProductHot)
+                                        {
+                                            var url = "/san-pham/" + @item.Alias + "/" + @item.ID;
+                                            <div class="owl-item">
+                                                <div>
+                                                    <div style="border: 1px solid #c9c9c9; height: 363px;">
+                                                        <a href="@url"><img src="@item.Image" alt="@item.Name" style="height:100%"></a>
+                                                    </div>
+                                                    <div>
+                                                        <ul class="product-hot">
+                                                            <li style="padding: 10px;">
+                                                                <h5><a href="@url">@item.Name</a></h5>
+                                                            </li>
+                                                            <li>
+                                                                <a href="@url">
+                                                                    @if (@item.PromotionPrice == null)
+                                                                    {
+                                                                        <h>@string.Format("{0:#,##0}", item.Price)đ</h>
+                                                                    }
+                                                                    else
+                                                                    {
+                                                                        <h>@string.Format("{0:#,##0}", item.PromotionPrice)đ</h>
+                                                                        <h style="text-decoration: line-through;color: #dddddd;">
+                                                                            @string.Format("{0:#,##0}", item.Price)đ
+                                                                        </h>
+                                                                    }
+                                                                </a>
+                                                            </li>
+                                                            <li style="padding: 10px; margin-bottom: 10px;">
+                                                                <button type="button" class="btn btn-outline-warning btnAddToCart" data-id="@item.ID">
+                                                                    THÊM GIỎ HÀNG
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        }
+                                    }
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="list-product" class="row">
+                <div class="col-12 title-content">
+                    <a href=""><img src="~/Assets/client/images/horizontal-line.png" alt=""> Bàn phím Gaming <img src="~/Assets/client/images/horizontal-line.png" alt=""></a>
+                </div>
+                <div id="list-products" class="container">
+                    <div class="list-product clearfix row">
+                        @{
+                            var responseProductBanphim = ViewBag.responseProductBanphim;
+                            foreach (var item in responseProductBanphim)
+                            {
+                                var url = "/san-pham/" + @item.Alias + "/" + @item.ID;
+                                <div class="product fl-left col-3">
+                                    <div>
+                                        <div class="product-img">
+                                            <a href="@url"><img src="@item.Image" alt="@item.Name"></a>
+                                        </div>
+                                        <div>
+                                            <ul class="product-information">
+                                                <li style="padding: 10px; height:70px">
+                                                    <h5><a href="@url">@item.Name</a></h5>
+                                                </li>
+                                                <li>
+                                                    <a href="@url">
+                                                        @if (@item.PromotionPrice == null)
+                                                        {
+                                                            <h>@string.Format("{0:#,##0}", item.Price)đ</h>
+                                                        }
+                                                        else
+                                                        {
+                                                            <h>@string.Format("{0:#,##0}", item.PromotionPrice)đ</h>
+                                                            <h style="text-decoration: line-through;color: #dddddd;">
+                                                                @string.Format("{0:#,##0}", item.Price)đ
+                                                            </h>
+                                                        }
+                                                    </a>
+
+                                                </li>
+                                                <li style="padding: 10px;">
+                                                    <button type="button" class="btn btn-outline-warning btnAddToCart" data-id="@item.ID">
+                                                        THÊM GIỎ HÀNG
+                                                    </button>
+
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        }
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="list-product" class="row">
+                <div class="col-12 title-content">
+                    <a href=""><img src="~/Assets/client/images/horizontal-line.png" alt=""> Chuột Gaming <img src="~/Assets/client/images/horizontal-line.png" alt=""></a>
+                </div>
+                <div id="list-products" class="container">
+                    <div class="list-product clearfix row">
+                        @{
+                            var responseProductChuot = ViewBag.responseProductChuot;
+                            foreach (var item in responseProductChuot)
+                            {
+                                var url = "/san-pham/" + @item.Alias + "/" + @item.ID;
+                                <div class="product fl-left col-3">
+                                    <div>
+                                        <div class="product-img">
+                                            <a href="@url"><img src="@item.Image" alt="@item.Name"></a>
+                                        </div>
+                                        <div>
+                                            <ul class="product-information">
+                                                <li style="padding: 10px; height:70px">
+                                                    <h5><a href="@url">@item.Name</a></h5>
+                                                </li>
+                                                <li>
+                                                    <a href="@url">
+                                                        @if (@item.PromotionPrice == null)
+                                                        {
+                                                            <h>@string.Format("{0:#,##0}", item.Price)đ</h>
+                                                        }
+                                                        else
+                                                        {
+                                                            <h>@string.Format("{0:#,##0}", item.PromotionPrice)đ</h>
+                                                            <h style="text-decoration: line-through;color: #dddddd;">
+                                                                @string.Format("{0:#,##0}", item.Price)đ
+                                                            </h>
+                                                        }
+                                                    </a>
+
+                                                </li>
+                                                <li style="padding: 10px;">
+                                                    <button type="button" class="btn btn-outline-warning btnAddToCart" data-id="@item.ID">
+                                                        THÊM GIỎ HÀNG
+                                                    </button>
+
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        }
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="list-product" class="row">
+                <div class="col-12 title-content">
+                    <a href=""><img src="~/Assets/client/images/horizontal-line.png" alt=""> Tai nghe Gaming <img src="~/Assets/client/images/horizontal-line.png" alt=""></a>
+                </div>
+                <div id="list-products" class="container">
+                    <div class="list-product clearfix row">
+                        @{
+                            var responseProductTainghe = ViewBag.responseProductTainghe;
+                            foreach (var item in responseProductTainghe)
+                            {
+                                var url = "/san-pham/" + @item.Alias + "/" + @item.ID;
+                                <div class="product fl-left col-3">
+                                    <div>
+                                        <div class="product-img">
+                                            <a href="@url"><img src="@item.Image" alt="@item.Name"></a>
+                                        </div>
+                                        <div>
+                                            <ul class="product-information">
+                                                <li style="padding: 10px; height:70px">
+                                                    <h5><a href="@url">@item.Name</a></h5>
+                                                </li>
+                                                <li>
+                                                    <a href="@url">
+                                                        @if (@item.PromotionPrice == null)
+                                                        {
+                                                            <h>@string.Format("{0:#,##0}", item.Price)đ</h>
+                                                        }
+                                                        else
+                                                        {
+                                                            <h>@string.Format("{0:#,##0}", item.PromotionPrice)đ</h>
+                                                            <h style="text-decoration: line-through;color: #dddddd;">
+                                                                @string.Format("{0:#,##0}", item.Price)đ
+                                                            </h>
+                                                        }
+                                                    </a>
+
+                                                </li>
+                                                <li style="padding: 10px;">
+                                                    <button type="button" class="btn btn-outline-warning btnAddToCart" data-id="@item.ID">
+                                                        THÊM GIỎ HÀNG
+                                                    </button>
+
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        }
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div id="tendency" class="row mb">
+            <div class="col-12 title-content">
+                <a href=""><img src="~/Assets/client/images/horizontal-line.png" alt=""> xu hướng <img src="~/Assets/client/images/horizontal-line.png" alt=""></a>
+            </div>
+            <div class="container tendency col-12">
+                <div class="row">
+                    <div class="owl-carousel owl-theme owl-loaded col-12">
+                        <div class="owl-stage-outer">
+                            <div class="owl-stage">
+                                @{
+                                    var PostView = (List<FashionShop.Web.Models.PostViewModel>)ViewBag.PostView;
+                                    foreach (var item in PostView)
+                                    {
+                                        var url = "/tin-tuc/" + @item.Alias + "/" + @item.ID;
+                                        <div class="owl-item col-4">
+                                            <div>
+                                                <a href="@url" class="thumb"><img src="@item.Image" alt="@item.Name" style="height: 223px;"></a>
+                                                <a href=""><h5>@item.Name</h5></a>
+                                                <a href=""><p>@item.Description</p></a>
+                                            </div>
+                                        </div>
+                                    }
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="registration">
+    <h3>Đăng ký để nhận khuyến mại</h3>
+    <h>Đăng ký để nhận được thông tin khuyến mại mới nhất</h>
+    <div id="registration-box">
+        <input type="email" name="" placeholder="NHẬP EMAIL CỦA BẠN">
+        <button>Đăng ký</button>
+    </div>
+</div>
+

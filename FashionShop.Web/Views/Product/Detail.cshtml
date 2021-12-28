@@ -1,0 +1,228 @@
+﻿@model FashionShop.Web.Models.ProductViewModel
+@{
+    ViewBag.Title = "Chi tiết sản phẩm";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section headerCSS{
+    <link href="~/Assets/client/css/detail-product.css" rel="stylesheet" />
+}
+@section footerJS{
+    <script src="~/Assets/client/js/scrips.js"></script>
+}
+
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v6.0"></script>
+
+<!-- breadcrumbs -->
+<div id="breadcrumbs">
+    <div class="container">
+        <div class="row">
+            <ul class="breadcrumbs">
+                <li class="bread-item">
+                    <a href="/" class="breadcrumb-link">
+                        <i class="fa fa-home" aria-hidden="true"></i>Trang
+                        chủ
+                    </a>
+                </li>
+                <li class="bread-item">
+                    <a href="category-product.html" class="breadcrumb-link breadcrumb-link-active">Sản phẩm</a>
+                </li>
+                <li class="bread-item">
+                    <a href="" class="breadcrumb-link breadcrumb-link-active">Chi tiết sản phẩm</a>
+                </li>
+                <li class="bread-item">
+                    <a href="" class="breadcrumb-link breadcrumb-link-active">@Model.Name</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- body -->
+<div class="wp=content">
+    <div class="container">
+        <div class="row">
+            <!-- detail-product -->
+
+            <div id="detail-product">
+                <div class="info-product">
+                    <div class="fl-left img-product"><a href="" class="thumb-product"><img src="@Model.Image" alt=""></a></div>
+                    <div class="fl-right information-product">
+                        <ul>
+                            <li class="product-name">
+                                <h3>@Model.Name</h3>
+
+                            </li>
+                            <li class="product-code">
+                                <img src="~/Assets/client/images/tick.png" alt="">
+                                <p>@Model.ID</p>
+                            </li>
+                            <li class="product-price">
+                                <p class="product-price-after">@string.Format("{0:#,##0}", Model.Price) đ</p>
+                                <p class="product-price-before">@string.Format("{0:#,##0}", Model.PromotionPrice) đ</p>
+                            </li>
+                            <li class="product-text">
+                                <p>
+                                    @Model.Description
+                                </p>
+                            </li>
+                            <li class="product-amount">
+                                <p style="margin-right: 15px;color: #777777;">Số lượng :</p>
+                                <button>+</button>
+                                <p class="amount">1</p>
+                                <button>-</button>
+                            </li>
+                            <li>
+                                <button type="button" class="btn btn-outline-warning btnAddToCart" data-id="@Model.ID">Thêm giỏ hàng</button>
+                                <button type="button" class="btn btn-outline-warning btnAddToCart" data-id="@Model.ID">Mua ngay</button>
+                            </li>
+                            <li class="payments">
+                                <img src="~/Assets/client/images/payments.png" alt=""><a href="">
+                                    Hình thức thanh
+                                    toán
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="content-product">
+                    <div class="head-content">
+                        <h4>Thông tin sản phẩm</h4>
+                    </div>
+                    <div class="content-detail">
+                        <p>
+                            @Html.Raw(@Model.Content)
+                        </p>
+                        <div class="text-center">
+                            <img src="@Model.Image" alt="Hình ảnh minh họa" width="80%" height="70%"
+                                 title="Hình ảnh minh họa">
+                            <p>Hình ảnh minh họa</p>
+                        </div>
+                        <p>
+                            @Model.Description
+                        </p>
+                    </div>
+                </div>
+                <div class="like-fb">
+                    <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Ffcbarcelona%2F&width=786&layout=standard&action=like&size=small&share=true&height=35&appId" width="786" height="35" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                </div>
+                <div class="comments-fb">
+                    <div class="fb-comments" data-href="https://www.w3schools.com/" data-numposts="1" data-width="786"></div>
+                </div>
+                <div id="same-category">
+                    <div class="head-same-category">
+                        <h4>cùng chuyên mục</h4>
+                    </div>
+                    <div class="same-category">
+                        <div class="owl-carousel owl-theme owl-loaded">
+                            <div class="owl-stage-outer">
+                                <div class="owl-stage">
+                                    @{
+                                        var relatedProducts = (IEnumerable<FashionShop.Web.Models.ProductViewModel>)ViewBag.RelatedProducts;
+                                        foreach (var product in relatedProducts)
+                                        {
+                                            
+                                            <div class="owl-item" style="height:auto;">
+                                                <div class="thumb"><a href="/"><img src="@product.Image" alt=""></a></div>
+                                                <div class="info-same-category">
+                                                    <h5><a href="" style="text-decoration: none;">@product.Name</a></h5>
+                                                    <div class="fl-left" style="font-size: 16px;">
+                                                        <a href="" style="text-decoration: none;">
+                                                            @if (@product.PromotionPrice == null)
+                                                            {
+                                                                <p style="color: firebrick;">@string.Format("{0:#,##0}", product.Price)đ</p>
+                                                            }
+                                                            else
+                                                            {
+                                                                <p style="margin-bottom: 3px;text-decoration: line-through;color: #c9c9c9;">@string.Format("{0:#,##0}", product.Price)đ</p>
+                                                                <p style="color: firebrick;">@string.Format("{0:#,##0}", product.PromotionPrice)đ</p>
+                                                            }
+                                                        </a>
+                                                    </div>
+                                                    <button type="button" class="btn btn-outline-warning btnAddToCart" data-id="@product.ID" style="width: 83px;font-size: 13px;float: right;">Mua ngay</button>
+                                                </div>
+                                            </div>
+                                        }
+                                    }
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- sidebar -->
+            <div id="sidebar">
+                <div id="categories">
+                    <div class="category-head">
+                        <h4>danh mục</h4>
+                    </div>
+                    <div class="category-detail">
+                        <ul class="list-category">
+                            <li><a href="">sản phẩm</a></li>
+                            <li><a href="">cảm nhận sản phẩm</a></li>
+                            <li><a href="">xu hướng</a></li>
+                            <li><a style="border-bottom: none;" href="">thanh toán</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="banner" class="img-banner">
+                    <a href=""><img src="~/Assets/client/images/category-product/SALE.png" alt=""></a>
+                </div>
+
+                <div id="selling-products">
+                    <div class="category-head">
+                        <h4>sản phẩm bán chạy</h4>
+                    </div>
+                    <div class="category-selling">
+                        <ul class="list-category-selling">
+                            @{
+                                var HotProducts = (IEnumerable<FashionShop.Web.Models.ProductViewModel>)ViewBag.HotProducts;
+                                foreach (var product in HotProducts)
+                                {
+                                    <li class="selling">
+                                        <div>
+                                            <div class="img-selling fl_left">
+                                                <a href="">
+                                                    <img src="@product.Image"alt="@product.Name">
+                                                </a>
+                                            </div>
+                                            <div class="fl-left information-selling">
+                                                <ul>
+                                                    <li>
+                                                        <a class="selling-title" href="">
+                                                           @product.Name
+                                                        </a>
+                                                    </li>
+                                                    <li class="price">
+                                                      
+                                                        @if (@product.PromotionPrice == null)
+                                                        {
+                                                            <p><a class="price-after" href="">@string.Format("{0:#,##0}", product.Price)đ</a></p>
+                                                        }
+                                                        else
+                                                        {
+                                                            <p><a class="price-after" href="">@string.Format("{0:#,##0}", product.PromotionPrice)đ</a></p>
+                                                            <p><a class="price-before" href="">@string.Format("{0:#,##0}", product.Price)đ</a></p>
+                                                        }
+                                                    </li>
+                                                    <li><a class="selling-detail" href="/san-pham">Chi tiết</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                }
+                            }
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

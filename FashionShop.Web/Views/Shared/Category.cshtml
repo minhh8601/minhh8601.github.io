@@ -1,0 +1,85 @@
+﻿@model IEnumerable<FashionShop.Web.Models.ProductCategoryViewModel>
+
+<li>
+    <a href="/">Sản phẩm</a>
+    <ul class="sub-menu">
+        <li>
+            <a href="/san-pham-BPG">Bàn phím Gaming</a>
+            
+            <ul class="sub-menu">
+                @foreach (var category in Model.Where(x => x.ParentID == null))
+                {
+                    //var url = "/" + category.Alias + ".pc-" + category.ID + ".html";
+                    var url = "/danh-muc/" + "BPG/" + @category.Alias + "/" + @category.ID;
+                    var childCategories = Model.Where(x => x.ParentID == category.ID);
+                    <li>
+                        <a href="@url">@category.Name</a>
+                        @if (childCategories.Count() > 0)
+                        {
+                            <ul class="sub-menu">
+                                @foreach (var childCategory in childCategories)
+                                {
+                                    var childUrl = "/danh-muc/" + "BPG/" + childCategory.Alias + "/" + childCategory.ID;
+                                    <li><a href="@childUrl">@childCategory.Name</a></li>
+                                }
+                            </ul>
+                        }
+                    </li>
+
+                }
+            </ul>
+
+        </li>
+        <li>
+            <a href="/san-pham-CG">Chuột Gaming</a>
+            <ul class="sub-menu">
+                @foreach (var category in Model.Where(x => x.ParentID == null))
+                {
+                    //var url = "/" + category.Alias + ".pc-" + category.ID + ".html";
+                    var url = "/danh-muc/"+ "CG/"+ @category.Alias + "/" + @category.ID;
+                    var childCategories = Model.Where(x => x.ParentID == category.ID);
+                    <li>
+                        <a href="@url">@category.Name</a>
+                        @if (childCategories.Count() > 0)
+                        {
+                            <ul class="sub-menu">
+                                @foreach (var childCategory in childCategories)
+                                {
+                                    var childUrl = "/danh-muc/" + "CG/" + childCategory.Alias + "/" + childCategory.ID;
+                                    <li><a href="@childUrl">@childCategory.Name</a></li>
+                                }
+                            </ul>
+                        }                       
+                    </li>
+                    
+                }              
+            </ul>
+            
+        </li>
+        <li>
+            <a href="/san-pham-TG">Tai nghe Gaming</a>
+            <ul class="sub-menu">
+                @foreach (var category in Model.Where(x => x.ParentID == null))
+                {
+                    //var url = "/" + category.Alias + ".pc-" + category.ID + ".html";
+                    var url = "/danh-muc/" + "TG/" + @category.Alias + "/" + @category.ID;
+                    var childCategories = Model.Where(x => x.ParentID == category.ID);
+                    <li>
+                        <a href="@url">@category.Name</a>
+                        @if (childCategories.Count() > 0)
+                        {
+                            <ul class="sub-menu">
+                                @foreach (var childCategory in childCategories)
+                                {
+                                    var childUrl = "/danh-muc/" + "TG/" + childCategory.Alias + "/" + childCategory.ID;
+                                    <li><a href="@childUrl">@childCategory.Name</a></li>
+                                }
+                            </ul>
+                        }
+                    </li>
+
+                }
+            </ul>
+        </li>
+    </ul>
+</li>

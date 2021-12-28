@@ -1,0 +1,128 @@
+﻿@model FashionShop.Web.Models.FeedbackViewModel
+@{
+    ViewBag.Title = "Liên hệ";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section headerCSS{
+<link href="~/Assets/client/css/contact.css" rel="stylesheet" />
+}
+
+@section footerJS{
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAk3Eeu6MXm1Y6qil2hO6j89kckY5nnSTo"></script>
+    <script src="~/Assets/client/js/controllers/contact.js"></script>
+}
+
+<input type="hidden" id="hidAddress" value="@Model.ContactDetail.Name<br />Điện thoại:@Model.ContactDetail.Phone <br>Địa chỉ: @Model.ContactDetail.Address" />
+<input type="hidden" id="hidLat" value="@Model.ContactDetail.Lat" />
+<input type="hidden" id="hidLng" value="@Model.ContactDetail.Lng" />
+<input type="hidden" id="hidName" value="@Model.ContactDetail.Name" />
+
+ <!-- breadcrumbs -->
+<div id="breadcrumbs">
+    <div class="container">
+        <div class="row">
+            <ul class="breadcrumbs">
+                <li class="bread-item">
+                    <a href="/" class="breadcrumb-link">
+                        <i class="fa fa-home" aria-hidden="true"></i>Trang
+                        chủ
+                    </a>
+                </li>
+                <li class="bread-item">
+                    <a href="/lien-he" class="breadcrumb-link breadcrumb-link-active">Liên hệ</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- body -->
+<div class="wp=content">
+    <div class="container">
+        <div class="row">
+            <!-- detail-contact -->
+            <div class="detail-contact">
+                <section id="contact" class="contact">
+                    <div class="container">
+
+                        <div class="section-title">
+                            <h2>Liên hệ</h2>
+                            <p>Mọi thông tin chi tiết xin hãy liên hệ với chúng tôi để được giải đáp mọi thắc mắc</p>
+                        </div>
+
+                        <div class="row" data-aos="fade-in">
+
+                            <div class="col-lg-5 d-flex align-items-stretch">
+                                <div class="info">
+                                    <div class="address">
+                                        <i class="icofont-google-map"></i>
+                                        <h4>Địa chỉ:</h4>
+                                        <p>@Model.ContactDetail.Address</p>
+                                    </div>
+
+                                    <div class="email">
+                                        <i class="icofont-envelope"></i>
+                                        <h4>Email:</h4>
+                                        <p><a href="mailto:@(Model.ContactDetail.Email)">@(Model.ContactDetail.Email)</a></p>
+                                    </div>
+
+                                    <div class="phone">
+                                        <i class="icofont-phone"></i>
+                                        <h4>Gọi:</h4>
+                                        <p>@Model.ContactDetail.Phone</p>
+                                    </div>
+                                    
+                                    <div id="map"></div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+                                <div class="php-email-form">
+                                    @using (Html.BeginForm("SendFeedback", "Contact", FormMethod.Post))
+                                    {
+                                        @Html.AntiForgeryToken()
+                                        if (ViewData["SuccessMsg"] != null)
+                                        {
+                                            <div class="alert alert-success" role="alert">
+                                                <strong>Thank you! </strong> gửi phản hồi thành công.<br />
+                                                Cảm ơn bạn đã liên hệ với chúng tôi!
+                                            </div>
+                                        }
+                                        @Html.ValidationSummary(false, "", new { @class = "error-message" });
+                                        <div class="section-title">
+                                            <h3>Nhập thông tin liên hệ</h3>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group col-md-12">
+                                                <label for="name">Họ và tên :</label>
+                                                @Html.TextBoxFor(model => model.Name, new { @class = "form-control" })
+                                                <div class="validate"></div>
+                                            </div>
+                                            <div class="form-group col-md-12">
+                                                <label for="name">Địa chỉ Email :</label>
+                                                @Html.TextBoxFor(model => model.Email, new { @class = "form-control" })                                           <div class="validate"></div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="name">Nội dung :</label>
+                                            @Html.TextAreaFor(model => model.Message, new { @class = "form-control" })
+                                            <div class="validate"></div>
+                                        </div>                                    
+                                        <div class="text-center"><button type="submit">Gửi</button></div>
+                                    }           
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section><!-- End Contact Section -->
+            </div>
+
+
+        </div>
+    </div>
+</div>
+    </div>
+

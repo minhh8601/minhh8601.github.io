@@ -1,0 +1,17 @@
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Common\bin\Debug\FashionShop.Common.dll
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Common\bin\Debug\FashionShop.Common.pdb
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Common\obj\Debug\FashionShop.Common.dll
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Common\obj\Debug\FashionShop.Common.pdb
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Common\obj\Debug\FashionShop.Common.csproj.CoreCompileInputs.cache
+E:\MVC Example\FashionShop2\FashionShop.Common\bin\Debug\FashionShop.Common.dll
+E:\MVC Example\FashionShop2\FashionShop.Common\bin\Debug\FashionShop.Common.pdb
+E:\MVC Example\FashionShop2\FashionShop.Common\obj\Debug\FashionShop.Common.csproj.AssemblyReference.cache
+E:\MVC Example\FashionShop2\FashionShop.Common\obj\Debug\FashionShop.Common.csproj.CoreCompileInputs.cache
+E:\MVC Example\FashionShop2\FashionShop.Common\obj\Debug\FashionShop.Common.dll
+E:\MVC Example\FashionShop2\FashionShop.Common\obj\Debug\FashionShop.Common.pdb
+D:\VDDOAN\FashionShop.Common\bin\Debug\FashionShop.Common.dll
+D:\VDDOAN\FashionShop.Common\bin\Debug\FashionShop.Common.pdb
+D:\VDDOAN\FashionShop.Common\obj\Debug\FashionShop.Common.csproj.CoreCompileInputs.cache
+D:\VDDOAN\FashionShop.Common\obj\Debug\FashionShop.Common.dll
+D:\VDDOAN\FashionShop.Common\obj\Debug\FashionShop.Common.pdb
+D:\VDDOAN\FashionShop.Common\obj\Debug\FashionShop.Common.csproj.AssemblyReference.cache

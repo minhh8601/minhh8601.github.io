@@ -1,0 +1,472 @@
+﻿body{
+	font-family: roboto;
+	font-size: 14px;
+	color: #444444;
+	line-height: 25px;
+	font-weight: 400;
+	overflow-x: hidden;
+}
+#map{
+    height:400px;    
+}
+
+/*style header*/
+a#logo{
+	padding: 28px 0px;
+	display: block;
+}
+a#logo img{
+	display: block;
+	margin-right: 25px;
+}
+
+ul#main-menu li{
+	float: left;
+	position: relative;
+}
+ul#main-menu li a{
+	font-size: 16px;
+	font-weight: 500;
+	padding: 40px 15px;
+	display: block;
+	text-transform: uppercase;
+	line-height: 40px;
+	color: black;
+}
+#main-menu li:hover a{
+	transition: all 0.25s;
+	list-style: none;
+	text-decoration: none;
+}
+#main-menu>li.active>a,#main-menu>li:hover>a{
+	background: #bfe1f5;
+	transition: all 0.25s;
+	text-decoration: none;
+}
+#main-menu .sub-menu li{
+	float: none;
+}
+#main-menu .sub-menu{
+	display: none;
+	position: absolute;
+	width: 240px;
+	background:white;
+	left: 100%;
+	top: 0px;
+    z-index:10;
+}
+#main-menu>li>.sub-menu{
+	top: 120px;
+	left: 0px;
+}
+#main-menu .sub-menu li a{
+	position: relative;
+	font-size: 16px;
+	padding: 16px 28px 17px;
+	border-top: 1px solid #ffffff;
+}
+#main-menu .sub-menu li a:after{
+	content: "\f0da";
+	font-family: FontAwesome;
+	font-size: 16px;
+	position: absolute;
+	right: 15px; 
+}
+#main-menu li:hover>ul.sub-menu{
+	display: block;
+}
+#main-menu .sub-menu li:hover>a{
+	background:#bfe1f5;
+}
+
+#search-box {
+    display: block;
+    padding: 40px 0px;
+    line-height: 30px;
+    margin-left: 20px;
+    /* margin-right: 20px; */
+}
+.search{
+	width: auto;
+    border: 1px solid;
+    border-radius: 40px;
+}
+.search-txt{
+	width: 120px;
+    border: none;
+    margin-left: 15px;
+}
+.search-btn{
+	margin-right: 10px;
+    color: black;
+    border: none;
+    background: none;
+    font-size: 18px;
+}
+
+#shopping-bag a i
+{
+    padding: 15px;
+    font-size: 38px;
+    color: black;
+    margin: 10px;
+    margin-top: 20px;
+}
+
+.account {
+    margin-top:37px;
+}
+.account button{
+    border: 1px solid black;
+    background: white;
+    color: black;
+    font-size: 14px;
+    margin-left: 8px;
+}
+/*--------------------------------------------------------------------------------*/
+
+/* style-breadcrumbs */
+#breadcrumbs{
+    width: 100%;
+    height: 52px;
+    background-color: #e9e9e9;
+    margin-bottom: 50px;
+}
+.bread-item:not(:last-of-type)::after{
+    content: '\203a';
+    margin: 0 10px;
+    color: black;
+    font-size: 20px;
+}
+
+.bread-item{
+    display: inline-block;
+    padding: 17px 0px;
+}
+.bread-item a{
+    text-decoration: none;
+}
+.breadcrumb-link{
+    font-family: Roboto Condensed;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+    color: black;
+}
+.breadcrumb-link i{
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+
+
+/* style body --------------------------------------------*/
+
+.detail-contact{
+    width:100%;
+}
+.section-title{
+    line-height: 25px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.section-title h2{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.section-title p{
+    margin-bottom: 24px;
+    text-align: center;
+
+}
+
+.contact {
+    padding-bottom: 130px;
+  }
+  
+  .contact .info {
+    padding: 30px;
+    background: #fff;
+    width: 100%;
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+  }
+  
+  .contact .info i {
+    font-size: 20px;
+    color: #149ddd;
+    float: left;
+    width: 44px;
+    height: 44px;
+    background: #dff3fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .contact .info h4 {
+    padding: 0 0 0 60px;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #050d18;
+  }
+  
+  .contact .info p {
+    padding: 0 0 10px 60px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #173b6c;
+  }
+  
+  .contact .info .email p {
+    padding-top: 5px;
+  }
+  
+  .contact .info .social-links {
+    padding-left: 60px;
+  }
+  
+  .contact .info .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+    margin-right: 10px;
+  }
+  
+  .contact .info .social-links a:hover {
+    background: #149ddd;
+    color: #fff;
+  }
+  
+  .contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
+    background: #149ddd;
+    color: #fff;
+  }
+  
+  .contact .php-email-form {
+    width: 100%;
+    padding: 30px;
+    background: #fff;
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+  }
+  
+  .contact .php-email-form .form-group {
+    padding-bottom: 8px;
+  }
+  
+  .contact .php-email-form .validate {
+    display: none;
+    color: red;
+    margin: 0 0 15px 0;
+    font-weight: 400;
+    font-size: 13px;
+  }
+  
+  .contact .php-email-form .error-message {
+    display: none;
+    color: #fff;
+    background: #ed3c0d;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+  }
+  
+  .contact .php-email-form .sent-message {
+    display: none;
+    color: #fff;
+    background: #18d26e;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+  }
+  
+  .contact .php-email-form .loading {
+    display: none;
+    background: #fff;
+    text-align: center;
+    padding: 15px;
+  }
+  
+  .contact .php-email-form .loading:before {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    margin: 0 10px -6px 0;
+    border: 3px solid #18d26e;
+    border-top-color: #eee;
+    -webkit-animation: animate-loading 1s linear infinite;
+    animation: animate-loading 1s linear infinite;
+  }
+  
+  .contact .php-email-form input, .contact .php-email-form textarea {
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 14px;
+  }
+  
+  .contact .php-email-form input {
+    height: 44px;
+  }
+  
+  .contact .php-email-form textarea {
+    padding: 10px 12px;
+    height: 300px;
+  }
+  
+  .contact .php-email-form button[type="submit"] {
+    background: #149ddd;
+    border: 0;
+    padding: 10px 24px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 4px;
+  }
+  
+  .contact .php-email-form button[type="submit"]:hover {
+    background: #37b3ed;
+  }
+
+.head-same-category{
+    font-size: 25px;
+    text-transform: uppercase;
+    font-family: roboto condensed;
+    border-bottom: 2px solid #c9c9c9;
+    height: 42px;
+    margin-bottom: 20px;
+}
+.thumb{
+    height: 198px;
+    width: 187px;
+    overflow: hidden;
+    border-bottom: 1px solid #c9c9c9;
+}
+.thumb img{
+    height: 100%;
+    width: auto;
+}
+.head-same-category h4{
+    height: 42px;
+}
+.head-same-category:hover h4{
+    border-bottom:2px solid brown;
+    color: brown;
+}
+#same-category{
+    width: 786px;
+    margin-top: 20px;
+}
+.same-category .owl-item{
+    width: 25%;
+    font-size: 14px;
+    margin-right: 10px;
+    border: 1px solid #c9c9c9;
+    height: 292px;
+}
+.info-same-category{
+    text-align: justify;
+    padding: 8px;
+}
+.info-same-category h5{
+    font-size: 13px;
+    margin-bottom: 12px;
+}
+button.owl-prev{
+    font-size: 25px!important;
+    width: 30px;
+    background-color: bisque!important;
+    height: 30px;
+}
+button.owl-next{
+    font-size: 25px!important;
+    width: 30px;
+    background-color: bisque!important;
+    height: 30px;
+}
+
+
+/* style footer --------------------------------------------------*/
+#footer{
+    width: 100%;
+    height: 412px;
+    background-color: #1b1b1b;
+    position: relative;
+}
+.widget{
+    width: 30%;
+    padding: 20px;
+    margin-top: 70px;
+}
+.widget a img{
+    margin-bottom: 35px;
+}
+.widget h{
+    font-size: 16px;
+    font-family: Roboto Condensed;
+    font-weight: 300;
+    line-height: 28px;
+    color: white;
+}
+.widget-content{
+    padding: 20px;
+    color: white;
+    margin: 100px 20px;
+}
+.widget-head{
+    text-transform: uppercase;
+    font-size: 28px;
+    font-family: Roboto;
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+.widget-detail{
+    line-height: 28px;
+    font-size: 16px;
+    font-family: Roboto Condensed;
+    font-weight: 400;
+}
+.list-course li a{
+    color: white;
+    text-decoration: none;
+}
+.list-course li a i{
+    font-size: 12px;
+    margin-right: 5px;
+}
+#copy-right{
+    height: 50px;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+}
+#copy-right h4{
+    color: black;
+    font-size: 16px;
+    margin-top: 20px;
+    font-family: Roboto Condensed;
+    font-weight: 300;
+}
+#fanpage{
+    margin-top: 120px;
+    position: absolute;
+    right: 190px;
+}
+#fanpage iframe{
+    width: 306px;
+}
+
+
+

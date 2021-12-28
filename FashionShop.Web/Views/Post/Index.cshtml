@@ -1,0 +1,286 @@
+﻿@model FashionShop.Web.Infrastructure.Core.PaginationSet<FashionShop.Web.Models.PostViewModel>
+
+@{
+    ViewBag.Title = "Tin tức";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section headerCSS{
+    <link href="~/Assets/client/css/category-news.css" rel="stylesheet" />
+}
+
+<!-- breadcrumbs -->
+<div id="breadcrumbs">
+    <div class="container">
+        <div class="row">
+            <ul class="breadcrumbs">
+                <li class="bread-item">
+                    <a href="index.html" class="breadcrumb-link">
+                        <i class="fa fa-home" aria-hidden="true"></i>Trang chủ
+                    </a>
+                </li>
+                <li class="bread-item">
+                    <a href="" class="breadcrumb-link breadcrumb-link-active">tin tức</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- body -->
+<div class="wp=content">
+    <div class="container">
+        <div class="row">
+            <!-- list-news -->
+            <div id="wrapper-content">
+                <div class="list-news" id="list-news">
+                    @if (Model.Count > 0)
+                    {
+                        foreach (var post in Model.Items)
+                        {
+                            var url = "/tin-tuc/" + @post.Alias + "/" + @post.ID;
+                            <div class="item-new">
+                                <div class="img-item col-md-4">
+                                    <a href="@url" class="thumb-post"><img src="@post.Image" alt="@post.Name"></a>
+                                </div>
+                                <div class="info-item col-md-8">
+                                    <div class="title-item">
+                                        <a href="@url">
+                                            <h3>@post.Name</h3>
+                                        </a>
+                                    </div>
+                                    <div class="datetime-item">
+                                        <p>@post.CreatedDate</p>
+                                    </div>
+                                    <div class="content-item">
+                                        <a href="@url">
+                                            <p>
+                                                @post.Description
+                                            </p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    }
+                    else
+                    {
+                        <div class="text-center">Không tìm thấy tin tức nào!</div>
+                    }
+                </div>
+                @if (Model.TotalPages > 1)
+                {
+                    // Create numeric links
+                    var startPageIndex = Math.Max(1, Model.Page - Model.MaxPage / 2);
+                    var endPageIndex = Math.Min(Model.TotalPages, Model.Page + Model.MaxPage / 2);
+
+                    <nav>
+                        <ul class="pagination">
+                            @if (Model.Page > 1)
+                            {
+                                <li class="page-item">
+                                    <a class="page-link" href="?page=1" aria-label="First">
+                                        <i class="fa fa-angle-double-left"></i>
+                                    </a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="?page=@(Model.Page-1)" aria-label="Previous">
+                                        <i class="fa fa-angle-double-left"></i>
+                                    </a>
+                                </li>
+                            }
+                            @for (int i = startPageIndex; i <= endPageIndex; i++)
+                            {
+                                if (Model.Page == i)
+                                {
+                                    <li class="active page-item"><a class="page-link" href="?page=@i" title="Trang @i">@i</a></li>
+                                }
+                                else
+                                {
+                                    <li class="page-item"><a class="page-link" href="?page=@i" title="Trang @i">@i</a></li>
+                                }
+                            }
+                            @if (Model.Page < Model.TotalPages)
+                            {
+                                <li class="page-item">
+                                    <a class="page-link" href="?page=@(Model.Page+1)" aria-label="Next">
+                                        <i class="fa fa-angle-double-right"></i>
+                                    </a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="?page=@Model.TotalPages" aria-label="Last">
+                                        <i class="fa fa-angle-double-right"></i>
+                                    </a>
+                                </li>
+                            }
+                        </ul>
+                    </nav>
+                }
+            </div>
+
+            <!-- sidebar -->
+            <div id="sidebar">
+                <div id="categories">
+                    <div class="category-head">
+                        <h4>danh mục</h4>
+                    </div>
+                    <div class="category-detail">
+                        <ul class="list-category">
+                            <li><a href="">sản phẩm</a></li>
+                            <li><a href="">cảm nhận sản phẩm</a></li>
+                            <li><a href="">xu hướng</a></li>
+                            <li><a style="border-bottom: none;" href="">thanh toán</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="banner" class="img-banner">
+                    <a href=""><img src="../images/category-product/banner.png" alt=""></a>
+                </div>
+
+                <div id="selling-products">
+                    <div class="category-head">
+                        <h4>sản phẩm bán chạy</h4>
+                    </div>
+                    <div class="category-selling">
+                        <ul class="list-category-selling">
+                            <li class="selling">
+                                <div>
+                                    <div class="img-selling fl_left">
+                                        <a href="">
+                                            <img src="../images/img2-1.png"
+                                                 alt="">
+                                        </a>
+                                    </div>
+                                    <div class="fl-left information-selling">
+                                        <ul>
+                                            <li>
+                                                <a class="selling-title" href="">
+                                                    Mascara làm dày và dài mi 
+                                                    MAYBELLINE Falsies
+                                                    9.2ml
+                                                </a>
+                                            </li>
+                                            <li class="price">
+                                                <p><a class="price-after" href="">345.000đ</a></p>
+                                                <p><a class="price-before" href="">380.000đ</a></p>
+                                            </li>
+                                            <li><a class="selling-detail" href="">Chi tiết</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="selling">
+                                <div>
+                                    <div class="img-selling fl_left">
+                                        <a href="">
+                                            <img src="../images/img2-2.png"
+                                                 alt="">
+                                        </a>
+                                    </div>
+                                    <div class="fl-left information-selling">
+                                        <ul>
+                                            <li>
+                                                <a class="selling-title" href="">
+                                                    Mascara làm dày và dài mi 
+                                                    MAYBELLINE Falsies
+                                                    9.2ml
+                                                </a>
+                                            </li>
+                                            <li class="price">
+                                                <p><a class="price-after" href="">345.000đ</a></p>
+                                                <p><a class="price-before" href="">380.000đ</a></p>
+                                            </li>
+                                            <li><a class="selling-detail" href="">Chi tiết</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="selling">
+                                <div>
+                                    <div class="img-selling fl_left">
+                                        <a href="">
+                                            <img src="../images/img2-3.png"
+                                                 alt="">
+                                        </a>
+                                    </div>
+                                    <div class="fl-left information-selling">
+                                        <ul>
+                                            <li>
+                                                <a class="selling-title" href="">
+                                                    Mascara làm dày và dài mi 
+                                                    MAYBELLINE Falsies
+                                                    9.2ml
+                                                </a>
+                                            </li>
+                                            <li class="price">
+                                                <p><a class="price-after" href="">345.000đ</a></p>
+                                                <p><a class="price-before" href="">380.000đ</a></p>
+                                            </li>
+                                            <li><a class="selling-detail" href="">Chi tiết</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="selling">
+                                <div>
+                                    <div class="img-selling fl_left">
+                                        <a href="">
+                                            <img src="../images/img2-4.png"
+                                                 alt="">
+                                        </a>
+                                    </div>
+                                    <div class="fl-left information-selling">
+                                        <ul>
+                                            <li>
+                                                <a class="selling-title" href="">
+                                                    Mascara làm dày và dài mi
+                                                    MAYBELLINE Falsies
+                                                    9.2ml
+                                                </a>
+                                            </li>
+                                            <li class="price">
+                                                <p><a class="price-after" href="">345.000đ</a></p>
+                                                <p><a class="price-before" href="">380.000đ</a></p>
+                                            </li>
+                                            <li><a class="selling-detail" href="">Chi tiết</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="selling">
+                                <div>
+                                    <div class="img-selling fl_left">
+                                        <a href="">
+                                            <img src="../images/img2-1.png"
+                                                 alt="">
+                                        </a>
+                                    </div>
+                                    <div class="fl-left information-selling">
+                                        <ul>
+                                            <li>
+                                                <a class="selling-title" href="">
+                                                    Mascara làm dày và dài mi 
+                                                    MAYBELLINE Falsies
+                                                    9.2ml
+                                                </a>
+                                            </li>
+                                            <li class="price">
+                                                <p><a class="price-after" href="">345.000đ</a></p>
+                                                <p><a class="price-before" href="">380.000đ</a></p>
+                                            </li>
+                                            <li><a class="selling-detail" href="">Chi tiết</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

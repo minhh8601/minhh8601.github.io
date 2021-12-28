@@ -1,0 +1,32 @@
+.fl-left{
+	float: left;
+}
+.fl-right{
+	float: right;
+}
+.text-center{
+	text-align: center;
+}
+.text-justify{
+	text-align: justify;
+}
+.text-left{
+	text-align: left;
+}
+.text-right{
+	text-align: right;
+}
+.wp-inner{
+	width: 1170px;
+	margin: 0px auto;
+}
+a{
+	color: black;
+	text-decoration: none;
+}
+.text-none{
+	text-decoration: none;
+}
+.error{
+    color:red;
+}

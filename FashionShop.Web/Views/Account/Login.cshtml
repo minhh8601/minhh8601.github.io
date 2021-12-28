@@ -1,0 +1,52 @@
+﻿@model FashionShop.Web.Models.LoginViewModel
+@{
+    ViewBag.Title = "Login";
+}
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Đăng nhập</title>
+    <link href="~/Assets/client/css/login.css" rel="stylesheet" />
+</head>
+<body>
+    @using (Html.BeginForm("Login", "Account", new { returnUrl = @ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "login-form" }))
+    {
+        @Html.ValidationSummary(false, "", new { @class = "error" })
+        <h1>Đăng nhập</h1>
+        <div class="txtb">
+            @Html.TextBoxFor(model => model.UserName)
+            <span data-placeholder="Username"></span>
+        </div>
+        <div class="txtb">
+            @Html.PasswordFor(model => model.Password)
+            <span data-placeholder="Password"></span>
+        </div>
+        <div style="margin-bottom:30px;">
+            @Html.CheckBoxFor(model => model.RememberMe)
+            Nhớ mật khẩu?
+        </div>
+        <input type="submit" class="logbtn" value="Đăng nhập">
+        <div class="bottom-text">
+            Bạn chưa có tài khoản? <a href="/dang-ky">Đăng ký</a>
+        </div>
+    }
+
+    <script type="text/javascript" src="../js/jquery-3.5.0.min.js"></script>
+
+    <script type="text/javascript">
+        $(".txtb input").on("focus", function () {
+            $(this).addClass("focus");
+        });
+
+        $(".txtb input").on("blur", function () {
+            if ($(this).val() == "")
+                $(this).removeClass("focus");
+        });
+
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,223 @@
+﻿
+@{
+    ViewBag.Title = "Giỏ hàng";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section headerCSS{
+    <link href="~/Assets/client/css/cart.css" rel="stylesheet" />
+}
+@section footerJS{
+    <script src="~/Assets/client/js/controllers/shoppingCart.js"></script>
+}
+
+<!-- breadcrumbs -->
+<div id="breadcrumbs">
+    <div class="container">
+        <div class="row">
+            <ul class="breadcrumbs">
+                <li class="bread-item">
+                    <a href="/" class="breadcrumb-link">
+                        <i class="fa fa-home" aria-hidden="true"></i>Trang chủ
+                    </a>
+                </li>
+                <li class="bread-item">
+                    <a href="" class="breadcrumb-link breadcrumb-link-active">Giỏ hàng</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- body -->
+<div class="wp=content">
+    <div class="container">
+        <div class="row">
+
+            <!-- list-products -->
+            <div id="list-products" class="col-9 container">
+                <div class="list-product clearfix row">
+                    <div class="single_top">
+                        <div class="single_grid">
+                            <div id="cartContent">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <td>STT</td>
+                                            <td>Tên sản phẩm</td>
+                                            <td>Hình ảnh</td>
+                                            <td>Giá</td>
+                                            <td>Số lượng</td>
+                                            <td>Thành tiền</td>
+                                            <td>#</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="cartBody"></tbody>
+                                </table>
+                                <button class="btn btn-success" id="btnContinue">Tiếp tục mua hàng</button>
+                                <button class="btn btn-danger" id="btnDeleteAll">Xóa giỏ hàng</button>
+                                <button class="btn btn-primary" id="btnCheckout">Thanh toán</button>
+                                <div class="pull-right">
+                                    Tổng tiền: <span id="lblTotalOrder"></span>
+                                </div>
+                            </div>
+                            <div id="divCheckout" style="display:none;">
+                                <div class="reservation_top">
+                                    <div class="contact_right">
+                                        <h3 style="text-align:center;margin-top:20px;">Thanh toán</h3>
+                                        <div class="contact-form">
+                                            <form method="post" id="frmPayment">
+                                                @if (Request.IsAuthenticated)
+                                                {
+                                                    <label>
+                                                        <input type="checkbox" id="chkUserLoginInfo" />
+                                                        Sử dụng thông tin đăng nhập
+                                                    </label>
+                                                }
+                                                <div class="form-group">
+                                                    <label for="name">Họ tên :</label>
+                                                    <input type="text" class="form-control" id="txtName" name="name" placeholder="Họ tên">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="name">Địa chỉ :</label>
+                                                    <input type="text" class="form-control" id="txtAddress" name="address" placeholder="Địa chỉ">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="name">Email :</label>
+                                                    <input type="text" class="form-control" id="txtEmail" name="email" placeholder="Email">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="name">Điện thoại :</label>
+                                                    <input type="text" class="form-control" id="txtPhone" name="phone" placeholder="Điện thoại">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="name">Message :</label>
+                                                    <textarea class="form-control" placeholder="Message" value="" id="txtMessage"></textarea>
+                                                </div>
+
+                                                <input type="button" class="btn btn-primary" id="btnCreateOrder" value="Thanh toán">
+
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <script id="tplCart" type="x-tmpl-mustache">
+                        <tr>
+                            <td>{{ProductId}}</td>
+                            <td>{{ProductName}}</td>
+                            <td><img src="{{Image}}" height="50" /></td>
+                            <td>{{PriceF}}</td>
+                            <td><input type="number" data-id="{{ProductId}}" data-price="{{Price}}" value="{{Quantity}}" class="input txtQuantity" /></td>
+                            <td id="amount_{{ProductId}}">{{Amount}}</td>
+                            <td><button class="btn btn-danger btnDeleteItem" data-id="{{ProductId}}"><i class="fa fa-trash-o" aria-hidden="true" style="color:white;"></i></button></td>
+                        </tr>
+                    </script>
+                </div>
+            </div>
+
+            <!-- sidebar -->
+            <div id="sidebar" class="col-3">
+                <div id="categories">
+                    <div class="category-head">
+                        <h4>danh mục</h4>
+                    </div>
+                    <div class="category-detail">
+                        <ul class="list-category">
+                            <li><a href="">sản phẩm</a></li>
+                            <li><a href="">cảm nhận sản phẩm</a></li>
+                            <li><a href="">xu hướng</a></li>
+                            <li><a style="border-bottom: none;" href="">thanh toán</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="banner" class="img-banner">
+                    <a href=""><img src="~/Assets/client/images/category-product/banner.png" alt=""></a>
+                </div>
+
+                <div id="selling-products">
+                    <div class="category-head">
+                        <h4>sản phẩm bán chạy</h4>
+                    </div>
+                    <div class="category-selling">
+                        <ul class="list-category-selling">
+                            <li class="selling">
+                                <div>
+                                    <div class="img-selling fl_left">
+                                        <a href="">
+                                            <img src="~/Assets/client/images/img2-1.png"
+                                                 alt="">
+                                        </a>
+                                    </div>
+                                    <div class="fl-left information-selling">
+                                        <ul>
+                                            <li>
+                                                <a class="selling-title" href="">Mascara làm dày và dài mi </a>
+                                            </li>
+                                            <li class="price">
+                                                <p><a class="price-after" href="">345.000đ</a></p>
+                                                <p><a class="price-before" href="">380.000đ</a></p>
+                                            </li>
+                                            <li><a class="selling-detail" href="">Chi tiết</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="selling">
+                                <div>
+                                    <div class="img-selling fl_left">
+                                        <a href="">
+                                            <img src="~/Assets/client/images/img2-2.png"
+                                                 alt="">
+                                        </a>
+                                    </div>
+                                    <div class="fl-left information-selling">
+                                        <ul>
+                                            <li>
+                                                <a class="selling-title" href="">
+                                                    Mascara làm dày và dài mi
+                                                </a>
+                                            </li>
+                                            <li class="price">
+                                                <p><a class="price-after" href="">345.000đ</a></p>
+                                                <p><a class="price-before" href="">380.000đ</a></p>
+                                            </li>
+                                            <li><a class="selling-detail" href="">Chi tiết</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="selling">
+                                <div>
+                                    <div class="img-selling fl_left">
+                                        <a href="">
+                                            <img src="~/Assets/client/images/img2-3.png"
+                                                 alt="">
+                                        </a>
+                                    </div>
+                                    <div class="fl-left information-selling">
+                                        <ul>
+                                            <li>
+                                                <a class="selling-title" href="">
+                                                    Mascara làm dày và dài mi
+                                                </a>
+                                            </li>
+                                            <li class="price">
+                                                <p><a class="price-after" href="">345.000đ</a></p>
+                                                <p><a class="price-before" href="">380.000đ</a></p>
+                                            </li>
+                                            <li><a class="selling-detail" href="">Chi tiết</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

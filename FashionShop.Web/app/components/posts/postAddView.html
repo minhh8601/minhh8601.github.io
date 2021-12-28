@@ -1,0 +1,122 @@
+﻿<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1>Thêm tin tức</h1>
+                </div>
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a href="/admin">Trang chủ</a></li>
+                        <li class="breadcrumb-item active"><a ui-sref="posts">Tin tức</a></li>
+                        <li class="breadcrumb-item"><a href="#">Thêm mới</a></li>
+                    </ol>
+                </div>
+            </div>
+        </div><!-- /.container-fluid -->
+    </section>
+    <div class="card container">
+        <div class="card-body row">
+            <form class="form-horizontal col-md-12" novalidate name="frmAddPost" role="form" ng-submit="AddPost()">
+                <div class="box-body">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Tên tin tức</label>
+                        <div class="col-sm-12">
+                            <input type="text" class="form-control" ng-change="GetSeoTitle()" ng-maxlength="256" required name="name" ng-model="post.Name">
+                            <span ng-show="frmAddPost.name.$invalid" class="has-error">Phải nhập tên tin tức</span>
+                            <span ng-show="frmAddPost.name.$error.maxlength" class="has-error">Tên tin tức chỉ được 256 ký tự</span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Tiêu đề SEO</label>
+                        <div class="col-sm-12">
+                            <input type="text" class="form-control" name="alias" required ng-model="post.Alias">
+                            <span ng-show="frmAddPost.alias.$invalid" class="has-error">Phải nhập tiêu đề SEO</span>
+                            <span ng-show="frmAddPost.alias.$error.maxlength" class="has-error">Tiêu đề SEO chỉ được 256 ký tự</span>
+
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Mô tả ngắn</label>
+                        <div class="col-sm-12">
+                            <input type="text" class="form-control" name="description" ng-maxlength="500" ng-model="post.Description">
+                            <span ng-show="frmAddPost.description.$error.maxlength" class="has-error">Mô tả chỉ được 500 ký tự</span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Danh mục</label>
+                        <div class="col-sm-12">
+                            <select name="parentId" required class="form-control" ng-model="post.CategoryID" ng-options="option.ID as option.Name for option in postCategories">
+                                <option value="" class="has-error">Chọn danh mục</option>
+                            </select>
+                            <span ng-show="frmAddPost.CategoryID.$invalid" class="has-error">Phải chọn danh mục</span>
+                            <input type="hidden" name="parentId" ng-model="post.CategoryID" />
+                        </div>
+                    </div>                  
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Hình ảnh</label>
+                        <div class="col-sm-12">
+                            <input type="text" class="form-control" name="image" ng-model="post.Image">
+                            <span ng-show="frmAddPost.image.$error.maxlength" class="has-error">Hình ảnh chỉ được 256 ký tự</span>
+                            <button class="btn btn-default" type="button" ng-click="ChooseImage()">Chọn ảnh</button>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Thêm ảnh</label>
+                        <div class="col-sm-12">
+                            <ul class="list-inline">
+                                <li ng-repeat="img in moreImages"><img ng-src="{{img}}" width="100" /></li>
+                            </ul>
+                            <button class="btn btn-default" type="button" ng-click="ChooseMoreImage()">Thêm ảnh</button>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Mô tả sản phẩm</label>
+                        <div class="col-sm-12">
+                            <textarea class="form-control" name="content" ckeditor="ckeditorOptions" ng-model="post.Content"></textarea>
+                        </div>
+                    </div>                   
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Meta Keyword</label>
+                        <div class="col-sm-12">
+                            <input type="text" class="form-control" name="metaKeyword" ng-model="post.MetaKeyword">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Meta Description</label>
+                        <div class="col-sm-12">
+                            <textarea class="form-control" name="metaKeyword" ng-model="post.MetaDescription"></textarea>
+                        </div>
+                    </div>                    
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-12">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="status" ng-model="post.Status" ng-checked="post.Status"> Kích hoạt
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="homeFlag" ng-model="post.HomeFlag" ng-checked="post.HomeFlag"> Hiển thị trang chủ
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="hotFlag" ng-model="post.HotFlag" ng-checked="post.HotFlag"> SP Hot
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- /.box-body -->
+                <div class="box-footer">
+                    <button ui-sref="posts" class="btn btn-default">Hủy</button>
+                    <button type="submit" ng-disabled="frmAddPost.$invalid" class="btn btn-success pull-right">Lưu</button>
+                </div><!-- /.box-footer -->
+            </form>
+        </div>
+    </div>
+</div>
+
+

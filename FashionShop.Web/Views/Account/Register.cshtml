@@ -1,0 +1,118 @@
+﻿@model FashionShop.Web.Models.RegisterViewModel
+@{
+    ViewBag.Title = "Đăng ký";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+<link href="~/Assets/client/css/global.css" rel="stylesheet" />
+
+<div class="register-box" style="margin: auto">
+    <div class="register-logo">
+        <a href="../../index2.html"><b>Fashion</b>Shop</a>
+    </div>
+
+    <div class="card">
+        <div class="card-body register-card-body">
+            <p class="login-box-msg">Đăng ký</p>
+            @using (Html.BeginForm("Register", "Account", FormMethod.Post))
+            {
+                @Html.AntiForgeryToken();
+                @Html.ValidationSummary(false, "", new { @class = "error" })
+
+                if (ViewData["SuccessMsg"] != null)
+                {
+                    <div class="alert alert-success" role="alert">
+                        <strong>Chúc mừng bạn! </strong> đã đăng ký thành công.
+                        <br />Vui lòng click <a href="/dang-nhap">vào đây </a>để đăng nhập.
+                    </div>
+                }              
+                <div class="input-group mb-3">
+                    @Html.TextBoxFor(model => model.UserName, new { @class = "form-control", @placeholder = "Tên đăng nhập" })
+                    <div class="input-group-append">
+                        <div class="input-group-text">
+                            <span class="fas fa-user"></span>
+                        </div>
+                    </div>
+                </div>               
+                <div class="input-group mb-3">
+                    
+                    @Html.PasswordFor(model => model.Password, new { @class = "form-control", @placeholder = "Mật khẩu",@id="password" })
+                    <div class="input-group-append">
+                        <div class="input-group-text">
+                            <span class="fas fa-lock"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="input-group mb-3">
+                    @Html.PasswordFor(model => model.RetypePassword, new { @class = "form-control", @placeholder = "Nhập lại mật khẩu", @id = "retypePassword" })
+                    <div class="input-group-append">
+                        <div class="input-group-text">
+                            <span class="fas fa-lock"></span>
+                        </div>
+                    </div>
+                    <label class="label label-danger" id="er_pass"></label>
+                </div>
+               
+                <div class="input-group mb-3">
+                    @Html.TextBoxFor(model => model.FullName, new { @class = "form-control", @placeholder = "Họ và tên" })
+                    <div class="input-group-append">
+                        <div class="input-group-text">
+                            <span class="fas fa-user"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="input-group mb-3">
+                    @Html.TextBoxFor(model => model.Email, new { @class = "form-control", @placeholder = "Email" })
+                    <div class="input-group-append">
+                        <div class="input-group-text">
+                            <span class="fas fa-envelope"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="input-group mb-3">
+                    @Html.TextBoxFor(model => model.PhoneNumber, new { @class = "form-control", @placeholder = "Số điện thoại" })
+                    <div class="input-group-append">
+                        <div class="input-group-text">
+                            <span class="fas fa-user"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="input-group mb-3">
+                    @Html.TextBoxFor(model => model.Address, new { @class = "form-control", @placeholder = "Địa chỉ" })
+                    <div class="input-group-append">
+                        <div class="input-group-text">
+                            <span class="fas fa-user"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-8">
+                        <div class="icheck-primary">
+                            <input type="checkbox" id="agreeTerms" name="terms" value="agree">
+                            <label for="agreeTerms">
+                                I agree to the <a href="#">terms</a>
+                            </label>
+                        </div>
+                    </div>
+                    <!-- /.col -->
+                    <div class="col-4">
+                        <button type="submit" class="btn btn-primary btn-block">Đăng ký</button>
+                    </div>
+                    <!-- /.col -->
+                </div>
+            }           
+            <div class="social-auth-links text-center">             
+                <a href="#" class="btn btn-block btn-primary">
+                    <i class="fab fa-facebook mr-2"></i>
+                    Đăng ký bằng Facebook
+                </a>
+                <a href="#" class="btn btn-block btn-danger">
+                    <i class="fab fa-google-plus mr-2"></i>
+                    Đăng ký bằng Google+
+                </a>
+            </div>
+
+            <a href="/dang-nhap" class="text-center">Đăng nhập tại đây</a>
+        </div>
+        <!-- /.form-box -->
+    </div><!-- /.card -->
+</div>

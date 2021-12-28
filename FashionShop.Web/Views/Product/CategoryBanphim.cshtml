@@ -1,0 +1,290 @@
+﻿@model FashionShop.Web.Infrastructure.Core.PaginationSet<FashionShop.Web.Models.ProductViewModel>
+@{
+    var category = (FashionShop.Web.Models.ProductCategoryViewModel)ViewBag.Category;
+    ViewBag.Title = category.Name + " BPG";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section headerCSS{
+    <link href="~/Assets/client/css/category-product.css" rel="stylesheet" />
+}
+@section footerJS{
+    <script src="~/Assets/client/js/scrips.js"></script>
+}
+
+<!-- breadcrumbs -->
+<div id="breadcrumbs">
+    <div class="container">
+        <div class="row">
+            <ul class="breadcrumbs">
+                <li class="bread-item">
+                    <a href="/trang-chu" class="breadcrumb-link">
+                        <i class="fa fa-home" aria-hidden="true"></i>Trang chủ
+                    </a>
+                </li>
+                <li class="bread-item">
+                    <a href="" class="breadcrumb-link breadcrumb-link-active">Danh mục</a>
+                </li>
+                <li class="bread-item">
+                    <a href="" class="breadcrumb-link breadcrumb-link-active">Bàn phím</a>
+                </li>
+                <li class="bread-item">
+                    <a href="" class="breadcrumb-link breadcrumb-link-active">@category.Name</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- body -->
+<div class="wp=content">
+    <div class="container">
+        <div class="row">
+            <div class="col-9" style="padding:0;margin-bottom:20px;">
+                <div class="w_content container">
+                    <div class="women row">
+                        <div class="col-md-5" style="font-size:20px;">
+                            <a href="/danh-muc/BPG/@(category.Alias)/@(category.ID)"><h2>@category.Name - <span>@Model.TotalCount sản phẩm</span> </h2></a>
+                        </div>
+                        <div class="col-md-7">
+                            <ul class="w_nav">
+                                <li>Sắp xếp : </li>
+                                <li><a class="active" href="?page=@Model.Page&sort=popular">Phổ biến</a></li> |
+                                <li><a href="?page=@Model.Page&sort=new">Mới </a></li> |
+                                <li><a href="?page=@Model.Page&sort=discount">Khuyến mãi</a></li> |
+                                <li><a href="?page=@Model.Page&sort=price">Giá: Thấp -> Cao </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- list-products -->
+            <div id="list-products" class="col-9 container">
+                <div class="list-product clearfix row">
+                    @if (Model.Count > 0)
+                    {
+                        foreach (var product in Model.Items)
+                        {
+                            var url = "/san-pham/" + @product.Alias + "/" + @product.ID;
+                    <div class="product fl-left col-4">
+                        <div>
+                            <div class="product-img">
+                                <a href="@url"><img src="@product.Image" alt="@product.Image"></a>
+                            </div>
+                            <div>
+                                <ul class="product-information">
+                                    <li style="padding: 10px;">
+                                        <h5><a href="@url">@product.Name</a></h5>
+                                    </li>
+                                    <li style="padding: 8px;">
+                                        <a href="@url">
+                                            @if (@product.PromotionPrice == null)
+                                            {
+                                                <h>@string.Format("{0:#,##0}", product.Price)đ</h>                                               
+                                            }
+                                            else
+                                            {
+                                                <h>@string.Format("{0:#,##0}", product.PromotionPrice)đ</h>
+                                                <h style="text-decoration: line-through;color: #dddddd;">
+                                                    @string.Format("{0:#,##0}", product.Price)đ
+                                                </h>
+                                            }
+                                        </a>
+                                    </li>
+
+                                    <li style="padding: 10px 10px 0px 10px;">
+                                        <button type="button" class="btn btn-outline-warning btnAddToCart" data-id="@product.ID">
+                                            THÊM GIỎ HÀNG
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                        }
+
+                    }
+                    else
+                    {
+                    <div class="text-center">Không tìm thấy sản phẩm nào!</div>
+                    }
+                </div>
+                @if (Model.TotalPages > 1)
+                {
+                    // Create numeric links
+                    var startPageIndex = Math.Max(1, Model.Page - Model.MaxPage / 2);
+                    var endPageIndex = Math.Min(Model.TotalPages, Model.Page + Model.MaxPage / 2);
+
+                    <nav>
+                        <ul class="pagination">
+                            @if (Model.Page > 1)
+                            {
+                                <li class="page-item">
+                                    <a class="page-link" href="?page=1" aria-label="First">
+                                        <i class="fa fa-angle-double-left"></i>
+                                    </a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="?page=@(Model.Page-1)" aria-label="Previous">
+                                        <i class="fa fa-angle-double-left"></i>
+                                    </a>
+                                </li>
+                            }
+                            @for (int i = startPageIndex; i <= endPageIndex; i++)
+                            {
+                                if (Model.Page == i)
+                                {
+                                    <li class="active page-item"><a class="page-link" href="?page=@i" title="Trang @i">@i</a></li>
+                                }
+                                else
+                                {
+                                    <li class="page-item"><a class="page-link" href="?page=@i" title="Trang @i">@i</a></li>
+                                }
+                            }
+                            @if (Model.Page < Model.TotalPages)
+                            {
+                                <li class="page-item">
+                                    <a class="page-link" href="?page=@(Model.Page+1)" aria-label="Next">
+                                        <i class="fa fa-angle-double-right"></i>
+                                    </a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="?page=@Model.TotalPages" aria-label="Last">
+                                        <i class="fa fa-angle-double-right"></i>
+                                    </a>
+                                </li>
+                            }
+                        </ul>
+                    </nav>
+                }
+            </div>
+
+            <!-- sidebar -->
+            <div id="sidebar" class="col-3">
+                <div id="categories">
+                    <div class="category-head">
+                        <h4>danh mục</h4>
+                    </div>
+                    <div class="category-detail">
+                        <ul class="list-category">
+                            <li><a href="">sản phẩm</a></li>
+                            <li><a href="">cảm nhận sản phẩm</a></li>
+                            <li><a href="">xu hướng</a></li>
+                            <li><a style="border-bottom: none;" href="">thanh toán</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="banner" class="img-banner">
+                    <a href=""><img src="~/Assets/client/images/category-product/SALE.png" alt=""></a>
+                </div>
+
+                <div id="selling-products">
+                    <div class="category-head">
+                        <h4>sản phẩm bán chạy</h4>
+                    </div>
+                    <div class="category-selling">
+                        <ul class="list-category-selling">
+                            <li class="selling">
+                                <div>
+                                    <div class="img-selling fl_left">
+                                        <a href="">
+                                            <img src="/UploadedFiles/images/s%E1%BA%A3n%20ph%E1%BA%A9m/B%C3%A0n%20phim/LOGITECH/LOGITECH%203087%20DS%20MIDNIGHT.jpg" alt="B&#224;n ph&#237;m Gaming MIDNIGHT">
+                                        </a>
+                                    </div>
+                                    <div class="fl-left information-selling">
+                                        <ul>
+                                            <li>
+                                                <a class="selling-title" href="">
+                                                    B&#224;n ph&#237;m Gaming MIDNIGHT
+                                                </a>
+                                            </li>
+                                            <li class="price">
+
+                                                <p><a class="price-after" href="">1,300,000đ</a></p>
+                                            </li>
+                                            <li><a class="selling-detail" href="">Chi tiết</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="selling">
+                                <div>
+                                    <div class="img-selling fl_left">
+                                        <a href="">
+                                            <img src="/UploadedFiles/images/s%E1%BA%A3n%20ph%E1%BA%A9m/B%C3%A0n%20phim/DAREU/DAREU%20A87%20SWALLOW.jpg" alt="B&#224;n ph&#237;m Gaming SWALLOW">
+                                        </a>
+                                    </div>
+                                    <div class="fl-left information-selling">
+                                        <ul>
+                                            <li>
+                                                <a class="selling-title" href="">
+                                                    B&#224;n ph&#237;m Gaming SWALLOW
+                                                </a>
+                                            </li>
+                                            <li class="price">
+
+                                                <p><a class="price-after" href="">890,000đ</a></p>
+                                                <p><a class="price-before" href="">980,000đ</a></p>
+                                            </li>
+                                            <li><a class="selling-detail" href="">Chi tiết</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="selling">
+                                <div>
+                                    <div class="img-selling fl_left">
+                                        <a href="">
+                                            <img src="/UploadedFiles/images/s%E1%BA%A3n%20ph%E1%BA%A9m/B%C3%A0n%20phim/DAREU/DAREU%20A87%20SUMMER.jpg" alt="B&#224;n ph&#237;m Gaming DAREU Summer">
+                                        </a>
+                                    </div>
+                                    <div class="fl-left information-selling">
+                                        <ul>
+                                            <li>
+                                                <a class="selling-title" href="">
+                                                    B&#224;n ph&#237;m Gaming DAREU Summer
+                                                </a>
+                                            </li>
+                                            <li class="price">
+
+                                                <p><a class="price-after" href="">1,000,000đ</a></p>
+                                                <p><a class="price-before" href="">1,300,000đ</a></p>
+                                            </li>
+                                            <li><a class="selling-detail" href="">Chi tiết</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="selling">
+                                <div>
+                                    <div class="img-selling fl_left">
+                                        <a href="">
+                                            <img src="/UploadedFiles/images/s%E1%BA%A3n%20ph%E1%BA%A9m/B%C3%A0n%20phim/DAREU/DAREU%20A87%20DREAM.jpg" alt="B&#224;n ph&#237;m Gaming DAREU DREAM">
+                                        </a>
+                                    </div>
+                                    <div class="fl-left information-selling">
+                                        <ul>
+                                            <li>
+                                                <a class="selling-title" href="">
+                                                    B&#224;n ph&#237;m Gaming DAREU DREAM
+                                                </a>
+                                            </li>
+                                            <li class="price">
+
+                                                <p><a class="price-after" href="">790,000đ</a></p>
+                                                <p><a class="price-before" href="">890,000đ</a></p>
+                                            </li>
+                                            <li><a class="selling-detail" href="">Chi tiết</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

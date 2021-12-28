@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NGHĨA ĐẸP TRAI</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../fonts/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../library\bootstrap\css\bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../library/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="../library/owlcarousel/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/global.css">
+    <link rel="stylesheet" type="text/css" href="../css/category-news.css">
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+</head>
+
+<body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v6.0"></script>
+    <!-- header -->
+    <header id="header" class="container">
+        <div class="row">
+            <a href="index.html" id="logo" class="fl-left">
+                <img src="../images/logo.png" alt="logo">
+            </a>
+            <ul id="main-menu">
+                <li><a href="index.html">trang chủ</a></li>
+                <li><a href="">về chúng tôi</a></li>
+                <li><a href="category-product.html">Sản phẩm</a>
+                    <ul class="sub-menu">
+                        <li><a href="">thời trang nam</a></li>
+                        <li><a href="">thời trang nữ</a>
+                            <ul class="sub-menu">
+                                <li><a href="">váy</a></li>
+                                <li><a href="">đầm</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="">đầm xuông</a></li>
+                                        <li><a href="">đầm ôm</a></li>
+                                        <li><a href="">đầm xòe</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">túi xách</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">thời trang trẻ em</a></li>
+                    </ul>
+                </li>
+                <li><a href="">xu hướng</a></li>
+                <li><a href="">thanh toán</a></li>
+                <li><a href="">liên hệ</a></li>
+
+            </ul>
+            <div id="search-box">
+                <div class="search">
+                    <input class="search-txt" type="text" name="" placeholder="Search...">
+                    <a href="" class="search-btn"><i class="fa fa-search" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div id="shopping-bag">
+                <a href=""><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+            </div>
+            <div id="account">
+                <a href=""><i class="fa fa-user" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- breadcrumbs -->
+    <div id="breadcrumbs">
+        <div class="container">
+            <div class="row">
+                <ul class="breadcrumbs">
+                    <li class="bread-item">
+                        <a href="index.html" class="breadcrumb-link"><i class="fa fa-home" aria-hidden="true"></i>Trang
+                            chủ</a>
+                    </li>
+                    <li class="bread-item">
+                        <a href="" class="breadcrumb-link breadcrumb-link-active">Xu hướng</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- body -->
+    <div class="wp=content">
+        <div class="container">
+            <div class="row">
+                <!-- list-news -->
+                <div id="wrapper-content">
+                    <div class="list-news" id="list-news">
+                        <!-- <div class="item-new">
+                            <div class="img-item">
+                                <a href="detail-news-1.html"><img src="../images/category-news/img1.png" alt=""></a>
+                            </div>
+                            <div class="info-item">
+                                <div class="title-item"><a href="detail-news-1.html">
+                                        <h3>Thời trang đẹp không có chỗ chê của mỹ nhân hàng đầu </h3>
+                                    </a></div>
+                                <div class="datetime-item">
+                                    <p>28 Tháng Năm, 2020 , 10:15 sáng</p>
+                                </div>
+                                <div class="content-item"><a href="detail-news-1.html">
+                                        <p>Không chỉ được mệnh danh là "Mỹ nhân đẹp nhất Philippines", nữ diễn viên
+                                            Marian Rivera còn gây ấn tượng trong lòng công chúng bởi gu thời trang. Cô
+                                            luôn giữ hình ảnh đẹp với những món đồ tinh tế, trong thời gian mang bầu cô
+                                            cũng được đánh giá là mặc đẹp nhất trong giới giải trí nước này.</p>
+                                    </a></div>
+                            </div>
+                        </div>                       -->
+                    </div>
+                    <div id="paginations">
+                        <ul class="pagination">
+                            <li class="page-item btn-prev"><a class="page-link" href="#"><i class="fa fa-chevron-left"
+                                        aria-hidden="true"></i></a></li>
+                            <div id="number-page" class="number-page">
+                                <!-- <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li> -->
+                            </div>
+                            <li class="page-item btn-next"><a class="page-link" href="#"><i class="fa fa-chevron-right"
+                                        aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- sidebar -->
+                <div id="sidebar">
+                    <div id="categories">
+                        <div class="category-head">
+                            <h4>danh mục</h4>
+                        </div>
+                        <div class="category-detail">
+                            <ul class="list-category">
+                                <li><a href="">sản phẩm</a></li>
+                                <li><a href="">cảm nhận sản phẩm</a></li>
+                                <li><a href="">xu hướng</a></li>
+                                <li><a style="border-bottom: none;" href="">thanh toán</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div id="banner" class="img-banner">
+                        <a href=""><img src="../images/category-product/banner.png" alt=""></a>
+                    </div>
+
+                    <div id="selling-products">
+                        <div class="category-head">
+                            <h4>sản phẩm bán chạy</h4>
+                        </div>
+                        <div class="category-selling">
+                            <ul class="list-category-selling">
+                                <li class="selling">
+                                    <div>
+                                        <div class="img-selling fl_left"><a href=""><img src="../images/img2-1.png"
+                                                    alt=""></a></div>
+                                        <div class="fl-left information-selling">
+                                            <ul>
+                                                <li><a class="selling-title" href="">Mascara làm dày và dài mi </br>
+                                                        MAYBELLINE Falsies
+                                                        9.2ml</a></li>
+                                                <li class="price">
+                                                    <p><a class="price-after" href="">345.000đ</a></p>
+                                                    <p><a class="price-before" href="">380.000đ</a></p>
+                                                </li>
+                                                <li><a class="selling-detail" href="">Chi tiết</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="selling">
+                                    <div>
+                                        <div class="img-selling fl_left"><a href=""><img src="../images/img2-2.png"
+                                                    alt=""></a></div>
+                                        <div class="fl-left information-selling">
+                                            <ul>
+                                                <li><a class="selling-title" href="">Mascara làm dày và dài mi </br>
+                                                        MAYBELLINE Falsies
+                                                        9.2ml</a></li>
+                                                <li class="price">
+                                                    <p><a class="price-after" href="">345.000đ</a></p>
+                                                    <p><a class="price-before" href="">380.000đ</a></p>
+                                                </li>
+                                                <li><a class="selling-detail" href="">Chi tiết</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="selling">
+                                    <div>
+                                        <div class="img-selling fl_left"><a href=""><img src="../images/img2-3.png"
+                                                    alt=""></a></div>
+                                        <div class="fl-left information-selling">
+                                            <ul>
+                                                <li><a class="selling-title" href="">Mascara làm dày và dài mi </br>
+                                                        MAYBELLINE Falsies
+                                                        9.2ml</a></li>
+                                                <li class="price">
+                                                    <p><a class="price-after" href="">345.000đ</a></p>
+                                                    <p><a class="price-before" href="">380.000đ</a></p>
+                                                </li>
+                                                <li><a class="selling-detail" href="">Chi tiết</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="selling">
+                                    <div>
+                                        <div class="img-selling fl_left"><a href=""><img src="../images/img2-4.png"
+                                                    alt=""></a></div>
+                                        <div class="fl-left information-selling">
+                                            <ul>
+                                                <li><a class="selling-title" href="">Mascara làm dày và dài mi </br>
+                                                        MAYBELLINE Falsies
+                                                        9.2ml</a></li>
+                                                <li class="price">
+                                                    <p><a class="price-after" href="">345.000đ</a></p>
+                                                    <p><a class="price-before" href="">380.000đ</a></p>
+                                                </li>
+                                                <li><a class="selling-detail" href="">Chi tiết</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="selling">
+                                    <div>
+                                        <div class="img-selling fl_left"><a href=""><img src="../images/img2-1.png"
+                                                    alt=""></a></div>
+                                        <div class="fl-left information-selling">
+                                            <ul>
+                                                <li><a class="selling-title" href="">Mascara làm dày và dài mi </br>
+                                                        MAYBELLINE Falsies
+                                                        9.2ml</a></li>
+                                                <li class="price">
+                                                    <p><a class="price-after" href="">345.000đ</a></p>
+                                                    <p><a class="price-before" href="">380.000đ</a></p>
+                                                </li>
+                                                <li><a class="selling-detail" href="">Chi tiết</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <!-- footer -->
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="widget fl-left">
+                    <a href="index.html"><img src="../images/logo-copy.png" alt=""></a><br>
+                    <h>Chúng ta vẫn biết rằng, làm việc với một đoạn văn bản dễ đọc và rõ nghĩa dễ gây rối trí và cản
+                        trở việc tập trung vào yếu tố trình bày văn bản. Lorem Ipsum có ưu điểm hơn so với đoạn văn bản
+                        chỉ gồm nội dung kiểu "Nội dung, nội dung, nội dung" là nó khiến văn </h>
+                </div>
+                <div class="fl-left widget-content">
+                    <div class="widget-head">
+                        <h4>danh mục</h4>
+                    </div>
+                    <div class="widget-detail">
+                        <ul class="list-course">
+                            <li><a href=""><i class="fa fa-check" aria-hidden="true"></i>Thời trang thu đông</a></li>
+                            <li><a href=""><i class="fa fa-check" aria-hidden="true"></i>Thời trang mùa hè</a></li>
+                            <li><a href=""><i class="fa fa-check" aria-hidden="true"></i>Thời trang nam</a></li>
+                            <li><a href=""><i class="fa fa-check" aria-hidden="true"></i>Thời trang nữ</a></li>
+                            <li><a href=""><i class="fa fa-check" aria-hidden="true"></i>Thời trang trẻ em</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="fl-left widget-content">
+                    <div class="widget-head">
+                        <h4>bán chạy</h4>
+                    </div>
+                    <div class="widget-detail">
+                        <ul class="list-course">
+                            <li><a href=""><i class="fa fa-check" aria-hidden="true"></i>Thời trang thu đông</a></li>
+                            <li><a href=""><i class="fa fa-check" aria-hidden="true"></i>Thời trang mùa hè</a></li>
+                            <li><a href=""><i class="fa fa-check" aria-hidden="true"></i>Thời trang nam</a></li>
+                            <li><a href=""><i class="fa fa-check" aria-hidden="true"></i>Thời trang nữ</a></li>
+                            <li><a href=""><i class="fa fa-check" aria-hidden="true"></i>Thời trang trẻ em</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="fanpage" class="fl-right">
+                    <iframe
+                        src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffcbarcelona&tabs&width=340&height=214&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                        width="340" height="214" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                        allowTransparency="true" allow="encrypted-media"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- copy-right -->
+    <div id="copy-right">
+        <h4>© 2020 All rights reserved - Bản quyền thuộc về Nghiadz.com</h4>
+    </div>
+
+    <script type="text/javascript" src="../js/jquery-3.5.0.min.js"></script>
+    <script type="text/javascript" src="../js/popper.min.js"></script>
+    <script type="text/javascript" src="../library/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../library/owlcarousel/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="../js/category-news.js"></script>
+</body>
+
+</html>

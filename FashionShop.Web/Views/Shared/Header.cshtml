@@ -1,0 +1,62 @@
+﻿@using Microsoft.AspNet.Identity;
+<header id="header" class="container">
+    <div class="row">
+        <a href="/trang-chu" id="logo" class="fl-left">
+            <img src="~/Assets/client/images/logo2.png" alt="logo">
+        </a>
+        <ul id="main-menu">
+            <li><a href="/">trang chủ</a></li>
+            <li><a href="">về chúng tôi</a></li>
+            @{Html.RenderAction("Category", "Home");}          
+            <li><a href="/tin-tuc">tin tức</a></li>
+            <li><a href="/lien-he">liên hệ</a></li>
+        </ul>
+        <div id="search-box">
+            <div class="search">
+                @*<input class="search-txt" type="text" name="" placeholder="Search...">
+                <a href="" ><i class="fa fa-search" aria-hidden="true"></i></a>*@
+                <form method="get" action="/tim-kiem">
+                    <input class="search-txt" type="text" id="txtKeyword" name="keyword" placeholder="Từ khóa">
+                    <button id="btnSearch" class="search-btn" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </form>
+            </div>
+        </div>
+        <div id="shopping-bag">
+            <a href="/gio-hang"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+        </div>     
+        <div class="account">
+            @using (Html.BeginForm("LogOut", "Account", FormMethod.Post, new { @id = "frmLogout" }))
+            {
+                if (Request.IsAuthenticated)
+                {
+                    @Html.AntiForgeryToken()
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            @User.Identity.GetUserName()
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="/dang-nhap">Đăng nhập</a>
+                            <a class="dropdown-item" href="/dang-ky">Đăng ký</a>
+                            <div class="dropdown-item">
+                                <a href="#" id="btnLogout"> Đăng xuất</a>
+                            </div>
+                        </div>
+                    </div>
+                }
+                else
+                {
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Tài khoản
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="/dang-nhap">Đăng nhập</a>
+                            <a class="dropdown-item" href="/dang-ky">Đăng ký</a>
+                        </div>
+                    </div>
+                }
+            }
+
+        </div>
+    </div>
+</header>

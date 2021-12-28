@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap" rel="stylesheet">
+    <link href="~/Assets/client/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Assets/admin/libs/jquery-ui/themes/smoothness/jquery-ui.min.css" rel="stylesheet" />
+    <link href="~/Assets/admin/libs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Assets/client/library/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="~/Assets/client/library/owlcarousel/assets/owl.theme.default.min.css" rel="stylesheet" />
+    <link href="~/Assets/client/css/global.css" rel="stylesheet" />
+    <link href="~/Assets/client/css/reset.css" rel="stylesheet" />
+    @RenderSection("headerCSS", required: false)
+</head>
+<body>
+    <!-- header -->   
+    @{Html.RenderAction("Header", "Home");}
+    <!-- slider -->
+    @RenderBody()
+
+    <!-- footer -->
+    @{Html.RenderAction("Footer", "Home");} 
+    <script src="~/Assets/admin/libs/jquery/dist/jquery.min.js"></script>
+    <script src="~/Assets/client/js/popper.min.js"></script>
+    <script src="~/Assets/admin/libs/jquery-ui/jquery-ui.min.js"></script>
+    <script src="~/Assets/admin/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="~/Assets/client/library/owlcarousel/owl.carousel.min.js"></script>
+    <script src="~/Assets/admin/libs/mustache/mustache.min.js"></script>
+    <script src="~/Assets/admin/libs/numeral/src/numeral.js"></script>
+    <script src="~/Assets/admin/libs/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/Assets/admin/libs/jquery-validation/dist/additional-methods.min.js"></script>
+    <script src="~/Assets/client/js/common.js"></script>
+    @RenderSection("footerJS", required: false)
+</body>
+
+</html>

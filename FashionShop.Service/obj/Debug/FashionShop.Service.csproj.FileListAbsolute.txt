@@ -1,0 +1,63 @@
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Service\bin\Debug\FashionShop.Service.dll
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Service\bin\Debug\FashionShop.Service.pdb
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Service\bin\Debug\FashionShop.Common.dll
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Service\bin\Debug\FashionShop.Data.dll
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Service\bin\Debug\FashionShop.Model.dll
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Service\bin\Debug\EntityFramework.dll
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Service\bin\Debug\FashionShop.Common.pdb
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Service\bin\Debug\FashionShop.Data.pdb
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Service\bin\Debug\FashionShop.Model.pdb
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Service\bin\Debug\EntityFramework.xml
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Service\obj\Debug\FashionShop.Service.dll
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Service\obj\Debug\FashionShop.Service.pdb
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Service\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Service\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Service\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Service\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Service\bin\Debug\FashionShop.Data.dll.config
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Service\bin\Debug\FashionShop.Model.dll.config
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Service\obj\Debug\FashionShop.Service.csprojAssemblyReference.cache
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Service\obj\Debug\FashionShop.Service.csproj.CoreCompileInputs.cache
+D:\C#\ASP.NET MVC\project3\FashionShop2\FashionShop.Service\obj\Debug\FashionShop.Service.csproj.CopyComplete
+E:\MVC Example\FashionShop2\FashionShop.Service\bin\Debug\FashionShop.Service.dll
+E:\MVC Example\FashionShop2\FashionShop.Service\bin\Debug\FashionShop.Service.pdb
+E:\MVC Example\FashionShop2\FashionShop.Service\bin\Debug\FashionShop.Common.dll
+E:\MVC Example\FashionShop2\FashionShop.Service\bin\Debug\FashionShop.Data.dll
+E:\MVC Example\FashionShop2\FashionShop.Service\bin\Debug\FashionShop.Model.dll
+E:\MVC Example\FashionShop2\FashionShop.Service\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\MVC Example\FashionShop2\FashionShop.Service\bin\Debug\EntityFramework.dll
+E:\MVC Example\FashionShop2\FashionShop.Service\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+E:\MVC Example\FashionShop2\FashionShop.Service\bin\Debug\FashionShop.Common.pdb
+E:\MVC Example\FashionShop2\FashionShop.Service\bin\Debug\FashionShop.Data.pdb
+E:\MVC Example\FashionShop2\FashionShop.Service\bin\Debug\FashionShop.Data.dll.config
+E:\MVC Example\FashionShop2\FashionShop.Service\bin\Debug\FashionShop.Model.pdb
+E:\MVC Example\FashionShop2\FashionShop.Service\bin\Debug\FashionShop.Model.dll.config
+E:\MVC Example\FashionShop2\FashionShop.Service\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\MVC Example\FashionShop2\FashionShop.Service\bin\Debug\EntityFramework.xml
+E:\MVC Example\FashionShop2\FashionShop.Service\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+E:\MVC Example\FashionShop2\FashionShop.Service\obj\Debug\FashionShop.Service.csproj.AssemblyReference.cache
+E:\MVC Example\FashionShop2\FashionShop.Service\obj\Debug\FashionShop.Service.csproj.CoreCompileInputs.cache
+E:\MVC Example\FashionShop2\FashionShop.Service\obj\Debug\FashionShop.Service.csproj.CopyComplete
+E:\MVC Example\FashionShop2\FashionShop.Service\obj\Debug\FashionShop.Service.dll
+E:\MVC Example\FashionShop2\FashionShop.Service\obj\Debug\FashionShop.Service.pdb
+D:\VDDOAN\FashionShop.Service\bin\Debug\FashionShop.Service.dll
+D:\VDDOAN\FashionShop.Service\bin\Debug\FashionShop.Service.pdb
+D:\VDDOAN\FashionShop.Service\bin\Debug\FashionShop.Common.dll
+D:\VDDOAN\FashionShop.Service\bin\Debug\FashionShop.Data.dll
+D:\VDDOAN\FashionShop.Service\bin\Debug\FashionShop.Model.dll
+D:\VDDOAN\FashionShop.Service\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\VDDOAN\FashionShop.Service\bin\Debug\EntityFramework.dll
+D:\VDDOAN\FashionShop.Service\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\VDDOAN\FashionShop.Service\bin\Debug\FashionShop.Common.pdb
+D:\VDDOAN\FashionShop.Service\bin\Debug\FashionShop.Data.pdb
+D:\VDDOAN\FashionShop.Service\bin\Debug\FashionShop.Data.dll.config
+D:\VDDOAN\FashionShop.Service\bin\Debug\FashionShop.Model.pdb
+D:\VDDOAN\FashionShop.Service\bin\Debug\FashionShop.Model.dll.config
+D:\VDDOAN\FashionShop.Service\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\VDDOAN\FashionShop.Service\bin\Debug\EntityFramework.xml
+D:\VDDOAN\FashionShop.Service\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\VDDOAN\FashionShop.Service\obj\Debug\FashionShop.Service.csproj.AssemblyReference.cache
+D:\VDDOAN\FashionShop.Service\obj\Debug\FashionShop.Service.csproj.CoreCompileInputs.cache
+D:\VDDOAN\FashionShop.Service\obj\Debug\FashionShop.Service.csproj.CopyComplete
+D:\VDDOAN\FashionShop.Service\obj\Debug\FashionShop.Service.dll
+D:\VDDOAN\FashionShop.Service\obj\Debug\FashionShop.Service.pdb
